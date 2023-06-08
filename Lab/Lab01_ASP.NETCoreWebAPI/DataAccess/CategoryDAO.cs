@@ -1,4 +1,4 @@
-﻿using BusinessObjects;
+﻿using BusinessObjects_;
 
 namespace DataAccess
 {
@@ -9,14 +9,14 @@ namespace DataAccess
             var listCategories = new List<Category>();
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
                     listCategories = context.Categories.ToList();
                 }
             }
-            catch(Exception e) {
-                throw new Exception(e.Message);
-
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
             return listCategories;
         }

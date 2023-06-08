@@ -1,0 +1,56 @@
+﻿@page
+@model eStoreClient.Pages.ProfileModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "EditProfile";
+}
+
+<h1>Edit Profile</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UpdateMember!.MemberId" />
+            <div class="form-group">
+                <label asp-for="UpdateMember!.Email" class="control-label"></label>
+                <input asp-for="UpdateMember!.Email" readonly class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateMember!.CompanyName" class="control-label"></label>
+                <input asp-for="UpdateMember!.CompanyName" class="form-control" />
+                <span asp-validation-for="UpdateMember!.CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateMember!.City" class="control-label"></label>
+                <input asp-for="UpdateMember!.City" class="form-control" />
+                <span asp-validation-for="UpdateMember!.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateMember!.Country" class="control-label"></label>
+                <input asp-for="UpdateMember!.Country" class="form-control" />
+                <span asp-validation-for="UpdateMember!.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateMember!.Password" class="control-label"></label>
+                <input asp-for="UpdateMember!.Password" class="form-control" />
+                <span asp-validation-for="UpdateMember!.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group pt-2 pb-4">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

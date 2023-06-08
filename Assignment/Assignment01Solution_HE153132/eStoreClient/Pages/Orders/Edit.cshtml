@@ -1,0 +1,47 @@
+﻿@page
+@model eStoreClient.Pages.Orders.EditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "EditOrder";
+}
+
+<h1>Edit Order</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UpdateOrder!.OrderId" />
+            <div class="form-group">
+                <label asp-for="UpdateOrder!.RequireDate" class="control-label"></label>
+                <input asp-for="UpdateOrder!.RequireDate" class="form-control" />
+                <span asp-validation-for="UpdateOrder!.RequireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateOrder!.ShippedDate" class="control-label"></label>
+                <input asp-for="UpdateOrder!.ShippedDate" class="form-control" />
+                <span asp-validation-for="UpdateOrder!.ShippedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdateOrder!.Freight" class="control-label"></label>
+                <input asp-for="UpdateOrder!.Freight" class="form-control" />
+                <span asp-validation-for="UpdateOrder!.Freight" class="text-danger"></span>
+            </div>
+            <div class="form-group pt-2 pb-2">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

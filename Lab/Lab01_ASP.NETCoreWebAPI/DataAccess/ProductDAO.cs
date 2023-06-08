@@ -1,4 +1,5 @@
-﻿using BusinessObjects;
+﻿using BusinessObjects_;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,82 +15,78 @@ namespace DataAccess
             var listProducts = new List<Product>();
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
-                    listProducts = context.Products.ToList();
+                    listProducts = context.Products.Include(x => x.Category).ToList();
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
-
             return listProducts;
         }
         public static Product FindProductById(int prodId)
         {
-            Product p = new Product();
+            Product product = null;
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
-                    p = context.Products.SingleOrDefault(x => x.ProductId == prodId);
+                    product = context.Products.Include(x => x.Category).SingleOrDefault(x => x.ProductId == prodId);
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
-            return p;
+            return product;
         }
-        public static void SaveProduct(Product p)
+        public static void SaveProduct(Product product)
         {
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
-                    context.Products.Add(p);
+                    context.Products.Add(product);
                     context.SaveChanges();
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
         }
-        public static void UpdateProduct(Product p)
+        public static void UpdateProduct(Product product)
         {
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
-                    context.Entry<Product>(p).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                    context.Entry<Product>(product).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                     context.SaveChanges();
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
         }
-        public static void DeleteProduct(Product p)
+        public static void DeleteProduct(Product product)
         {
             try
             {
-                using (var context = new MyDbContext())
+                using (var context = new DBContext())
                 {
-                    var p1 = context.Products.SingleOrDefault(
-                        x => x.ProductId == p.ProductId);
+                    var p1 = context.Products.SingleOrDefault(x => x.ProductId == product.ProductId);
                     context.Products.Remove(p1);
                     context.SaveChanges();
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
         }
     }
-
-
 }

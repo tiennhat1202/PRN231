@@ -1,0 +1,66 @@
+﻿@page
+@model eStoreClient.Pages.Products.CreateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+
+<h1>Create Product</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProductRequest!.ProductName" class="control-label"></label>
+                <input asp-for="ProductRequest!.ProductName" class="form-control" />
+                <span asp-validation-for="ProductRequest!.ProductName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Category</label>
+                <select asp-for="ProductRequest!.CategoryId" class="form-select">
+                    @foreach (var cat in Model.listCategories)
+                    {
+                        <option value="@cat.CategoryId">@cat.CategoryName</option>
+                    }
+                </select>
+                <span asp-validation-for="ProductRequest!.CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductRequest!.Weight" class="control-label"></label>
+                <input asp-for="ProductRequest!.Weight" class="form-control" />
+                <span asp-validation-for="ProductRequest!.Weight" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductRequest!.UnitPrice" class="control-label"></label>
+                <input asp-for="ProductRequest!.UnitPrice" class="form-control" />
+                <span asp-validation-for="ProductRequest!.UnitPrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProductRequest!.UnitsInStock" class="control-label"></label>
+                <input asp-for="ProductRequest!.UnitsInStock" class="form-control" />
+                <span asp-validation-for="ProductRequest!.UnitsInStock" class="text-danger"></span>
+            </div>
+
+            <div class="form-group pt-2 pb-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

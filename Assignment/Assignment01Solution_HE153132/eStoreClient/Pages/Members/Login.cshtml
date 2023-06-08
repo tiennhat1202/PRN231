@@ -1,0 +1,31 @@
+﻿@page
+@model eStoreClient.Pages.Members.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<div>
+    @if(ViewBag.Error != null)
+    {
+        <span class="text-danger">@ViewBag.Error</span>
+    }
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="formLogin.Email" class="control-label"></label>
+            <input asp-for="formLogin.Email" class="form-control" />
+            <span asp-validation-for="formLogin.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="formLogin.Password" class="control-label"></label>
+            <input type="password" asp-for="formLogin.Password" class="form-control" />
+            <span asp-validation-for="formLogin.Password" class="text-danger"></span>
+        </div>
+        <div class="pt-3">
+            <input type="submit" value="Login" class="bg-primary text-white border-1" />
+        </div>
+    </form>
+</div>

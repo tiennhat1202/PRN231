@@ -1,0 +1,61 @@
+﻿@page
+@model eStoreClient.Pages.Orders.CreateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "CreateOrder";
+}
+
+<h1>Create Order</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label class="control-label">Member</label>
+                <select asp-for="CreateOrder!.MemberId" class="form-select">
+                    @foreach (var item in Model.listMembers)
+                    {
+                        <option value="@item.MemberId">@item.Email</option>
+                    }
+                </select>
+                <span asp-validation-for="CreateOrder!.MemberId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CreateOrder!.RequireDate" class="control-label"></label>
+                <input asp-for="CreateOrder!.RequireDate" class="form-control" />
+                <span asp-validation-for="CreateOrder!.RequireDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CreateOrder!.ShippedDate" class="control-label"></label>
+                <input asp-for="CreateOrder!.ShippedDate" class="form-control" />
+                <span asp-validation-for="CreateOrder!.ShippedDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CreateOrder!.Freight" class="control-label"></label>
+                <input asp-for="CreateOrder!.Freight" class="form-control" />
+                <span asp-validation-for="CreateOrder!.Freight" class="text-danger"></span>
+            </div>
+
+            <div class="form-group pt-2 pb-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

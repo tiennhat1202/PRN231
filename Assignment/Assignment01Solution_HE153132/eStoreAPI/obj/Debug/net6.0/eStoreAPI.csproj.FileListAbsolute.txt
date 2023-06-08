@@ -1,0 +1,287 @@
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.AssemblyReference.cache
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfoInputs.cache
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfo.cs
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CoreCompileInputs.cache
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\appsettings.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.exe
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.deps.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.runtimeconfig.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.pdb
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\BusinessObject.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\DataAccess.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Dto.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\DataAccess.pdb
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Dto.pdb
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\BusinessObject.pdb
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.eStoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.eStoreAPI.props
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.eStoreAPI.props
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.eStoreAPI.props
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\scopedcss\bundle\eStoreAPI.styles.css
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CopyComplete
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\refint\eStoreAPI.dll
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.pdb
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.genruntimeconfig.cache
+D:\ky8_Code\PRU221m\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\ref\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.exe
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.deps.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.runtimeconfig.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.eStoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\scopedcss\bundle\eStoreAPI.styles.css
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\refint\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\eStoreAPI.genruntimeconfig.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\eStoreAPI\obj\Debug\net6.0\ref\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\eStoreAPI.exe
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\eStoreAPI.deps.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\eStoreAPI.runtimeconfig.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.eStoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\scopedcss\bundle\eStoreAPI.styles.css
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\refint\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\eStoreAPI.genruntimeconfig.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\eStoreAPI\obj\Debug\net6.0\ref\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\eStoreAPI.exe
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\eStoreAPI.deps.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\eStoreAPI.runtimeconfig.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.eStoreAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.eStoreAPI.props
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\scopedcss\bundle\eStoreAPI.styles.css
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\refint\eStoreAPI.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\eStoreAPI.genruntimeconfig.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\eStoreAPI\obj\Debug\net6.0\ref\eStoreAPI.dll

@@ -1,0 +1,54 @@
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Downloads\Assignment01Solution_HE151285 (1)\Assignment01Solution_HE151285\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment_01\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\appsettings.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\Repositories.pdb
+C:\Users\Nguyen Tien Nhat\Desktop\Assignment_01\Assignment01Solution_HE153132\Repositories\obj\Debug\net6.0\ref\Repositories.dll

@@ -1,0 +1,55 @@
+﻿@page
+@model eStoreClient.Pages.Members.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "ListMembers";
+    int index = 1;
+}
+
+<h1>List Members</h1>
+
+<p>
+    <a asp-page="Create">New Member</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Email</th>
+            <th>CompanyName</th>
+            <th>City</th>
+            <th>Country</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listMembers)
+        {
+            <tr>
+                <td>@(index)</td>
+                <td hidden>@(index++)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td class="d-flex">
+                    <a style="padding-left: 5px; padding-right: 5px; text-decoration: none;" asp-page="Edit" asp-route-id="@item.MemberId">Edit</a> |
+                    <a style="padding-left: 5px; padding-right: 5px; text-decoration: none;" asp-page="Details" asp-route-id="@item.MemberId">Details</a> |
+                    <form method="post">
+                        <button style="border: none; background: #ffffff; padding-left: 5px; color: red; text-decoration: underline;" type="submit" class="text-decoration-none" asp-page-handler="DeleteMember" asp-route-id="@item.MemberId">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

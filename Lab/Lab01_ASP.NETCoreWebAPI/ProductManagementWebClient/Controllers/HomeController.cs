@@ -15,7 +15,7 @@ namespace ProductManagementWebClient.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectPermanent("/Product");
         }
 
         public IActionResult Privacy()
