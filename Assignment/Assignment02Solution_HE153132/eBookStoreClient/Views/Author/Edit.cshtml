@@ -1,0 +1,61 @@
+﻿@using BusinessObject.DTO.AuthorDTO;
+@model AuthorDTO;
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Author/Edit">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input class="form-control" type="text" name="id" value="@Model.AuthorId" hidden />
+            </div>
+            <div class="form-group">
+                <label class="control-label">AuthorId</label>
+                <input class="form-control" type="text" name="AuthorId" value="@Model.AuthorId" readonly />
+            </div>
+            <div class="form-group">
+                <label class="control-label">LastName</label>
+                <input class="form-control" type="text" name="LastName" value="@Model.LastName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">FirstName</label>
+                <input class="form-control" type="text" name="FirstName" value="@Model.FirstName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Phone</label>
+                <input class="form-control" type="text" name="Phone" value="@Model.Phone" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Address</label>
+                <input class="form-control" type="text" name="Address" value="@Model.Address" required />
+            </div>
+             <div class="form-group">
+                <label class="control-label">City</label>
+                <input class="form-control" type="text" name="City" value="@Model.City" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">State</label>
+                <input class="form-control" type="text" name="State" value="@Model.State" required />
+            </div>
+             <div class="form-group">
+                <label class="control-label">Zip</label>
+                <input class="form-control" type="text" name="Zip" value="@Model.Zip" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">EmailAddress</label>
+                <input class="form-control" type="text" name="EmailAddress" value="@Model.EmailAddress" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

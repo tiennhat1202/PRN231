@@ -1,0 +1,69 @@
+﻿@using BusinessObject.DTO.PublisherDTO;
+@using eBookStoreClient.Models;
+@model IEnumerable<PublisherDTO>;
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Enter Publisher Information</h1>
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Publisher/Create">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label class="control-label">PublisherName</label>
+                <input class="form-control" type="text" name="PublisherName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">City</label>
+                <input class="form-control" type="text" name="City" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<h1>List Publisher</h1>
+
+<table class="table">
+    <thead style="background-color: cadetblue">
+        <tr>
+            <th>
+                PublisherId
+            </th>
+            <th>
+                PublisherName
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var (item, index) in Model.Select((value, i) => (value, i + 1)))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PubId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublisherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PubId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PubId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

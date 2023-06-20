@@ -1,0 +1,61 @@
+﻿@using BusinessObject.DTO.RoleDTO;
+@model IEnumerable<RoleDTO>
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Role/Create">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label class="control-label">Role ID</label>
+                <input readonly class="form-control" type="text" name="RoleId" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Role Description</label>
+                <input class="form-control" type="text" name="RoleDesc" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<h1>List Role</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                #Number
+            </th>
+            <th>
+                Role_Description
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var (item, index) in Model.Select((value, i) => (value, i + 1)))
+        {
+            <tr>
+                <td>
+                    @(index)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleDesc)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.RoleId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.RoleId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.RoleId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

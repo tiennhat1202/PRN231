@@ -33,6 +33,26 @@ namespace ProductManagementWebClient.Controllers
             List<ProductResponse> listProducts = JsonSerializer.Deserialize<List<ProductResponse>>(stringData, option);
             return View(listProducts);
         }
+
+        // GET Product/Edit/Id
+        public async Task<ActionResult> Edit(int id)
+        {
+            HttpResponseMessage responseMessage = await client.GetAsync(CategoryApiUrl);
+            string stringData = await responseMessage.Content.ReadAsStringAsync();
+            var option = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            List<CategoryResponse> categoryResponses = JsonSerializer.Deserialize<List<CategoryResponse>>(stringData, option);
+            ViewBag.categories = categoryResponses;
+
+            string url = ProductApiUrl + "/" + id;
+            responseMessage = await client.GetAsync(url);
+            stringData = await responseMessage.Content.ReadAsStringAsync();
+            ProductResponse productResponse = JsonSerializer.Deserialize<ProductResponse>(stringData, option);
+            return View(productResponse);
+        }
+
         //GET Product/Details/Id
         public async Task<ActionResult> Details(int id)
         {
@@ -64,24 +84,7 @@ namespace ProductManagementWebClient.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET Product/Edit/Id
-        public async Task<ActionResult> Edit(int id)
-        {
-            HttpResponseMessage responseMessage = await client.GetAsync(CategoryApiUrl);
-            string stringData = await responseMessage.Content.ReadAsStringAsync();
-            var option = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-            List<CategoryResponse> categoryResponses = JsonSerializer.Deserialize<List<CategoryResponse>>(stringData, option);
-            ViewBag.categories = categoryResponses;
-
-            string url = ProductApiUrl + "/" + id;
-            responseMessage = await client.GetAsync(url);
-            stringData = await responseMessage.Content.ReadAsStringAsync();
-            ProductResponse productResponse = JsonSerializer.Deserialize<ProductResponse>(stringData, option);
-            return View(productResponse);
-        }
+        
         // POST Product/Edit/Id
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -1,0 +1,69 @@
+﻿@using BusinessObject.DTO.UserDTO;
+@{
+    ViewData["Title"] = "Create";
+}
+@model IEnumerable<UserRequestDTO>
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/User/Create">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label class="control-label">UserID</label>
+                <input class="form-control" type="text" name="UserId" readonly />
+            </div>
+            <div class="form-group">
+                <label class="control-label">EmailAddress</label>
+                <input class="form-control" type="text" name="EmailAddress" required/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <input class="form-control" type="text" name="Password" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Source</label>
+                <input class="form-control" type="text" name="Source" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">FirstName</label>
+                <input class="form-control" type="text" name="FirstName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">MiddleName</label>
+                <input class="form-control" type="text" name="MiddleName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">LastName</label>
+                <input class="form-control" type="text" name="LastName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Role</label>
+                <select class="form-control" name="RoleId">
+                    @foreach (var item in ViewBag.roles)
+                    {
+                        <option value="@item.RoleId">@item.RoleDesc</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Publisher</label>
+                <select class="form-control" name="PubId">
+                    @foreach (var item in ViewBag.pubs)
+                    {
+                        <option value="@item.PubId">@item.PublisherName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Hire Date</label>
+                <input class="form-control" type="datetime-local" name="HireDate" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

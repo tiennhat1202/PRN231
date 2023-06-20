@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QVx1029CKg6lh8sii5dmJKRSHO/X/23pb+xB8qKBvEVPoOPcRltzE4+RohoH4y6rk27RAF1RAOM65qTCqDcWlg==",
+  "dgSpecHash": "UuFLKOHhcyAtDWQjfEk9O/X1b9RuquJZJFtACP9+mGSF2oxFrtm/2Ibe58sIcFUbHUdYop+kMcJC7E8LyFevWQ==",
   "success": true,
-  "projectFilePath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

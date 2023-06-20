@@ -1,0 +1,76 @@
+﻿@using BusinessObject.DTO.UserDTO;
+@model UserDTO;
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/User/Edit">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input class="form-control" type="text" name="id" value="@Model.UserId" hidden />
+            </div>
+            <div class="form-group">
+                <label class="control-label">UserID</label>
+                <input class="form-control" type="text" name="UserId" value="@Model.UserId" readonly />
+            </div>
+            <div class="form-group">
+                <label class="control-label">EmailAddress</label>
+                <input class="form-control" type="text" name="EmailAddress" value="@Model.EmailAddress" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <input class="form-control" type="text" name="Password" value="@Model.Password" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Source</label>
+                <input class="form-control" type="text" name="Source" value="@Model.Source" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">FirstName</label>
+                <input class="form-control" type="text" name="FirstName" value="@Model.FirstName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">MiddleName</label>
+                <input class="form-control" type="text" name="MiddleName" value="@Model.MiddleName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">LastName</label>
+                <input class="form-control" type="text" name="LastName" value="@Model.LastName" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Role</label>
+                <select class="form-control" name="RoleId">
+                    @foreach (var item in ViewBag.roles)
+                    {
+                        <option value="@item.RoleId" selected="@(item.RoleId == Model.RoleId)">@item.RoleDesc</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Publisher</label>
+                <select class="form-control" name="PubId">
+                    @foreach (var item in ViewBag.pubs)
+                    {
+                        <option value="@item.PubId" selected="@(item.PubId == Model.PubId)">@item.PublisherName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Hire Date</label>
+                <input class="form-control" type="datetime-local" name="HireDate" value="@Model.HireDate.ToString("yyyy-MM-ddTHH:mm")" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

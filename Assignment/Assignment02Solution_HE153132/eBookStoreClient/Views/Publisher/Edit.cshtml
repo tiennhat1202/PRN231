@@ -1,0 +1,45 @@
+﻿@using BusinessObject.DTO.PublisherDTO;
+@model PublisherDTO;
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Publisher/Edit">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input class="form-control" type="text" name="id" value="@Model.PubId" hidden />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Role_ID</label>
+                <input class="form-control" type="text" name="PubId" value="@Model.PubId" readonly />
+            </div>
+            <div class="form-group">
+                <label class="control-label">PublisherName</label>
+                <input class="form-control" type="text" name="PublisherName" value="@Model.PublisherName" required />
+            </div>
+             <div class="form-group">
+                <label class="control-label">City</label>
+                <input class="form-control" type="text" name="City" value="@Model.City" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">State</label>
+                <input class="form-control" type="text" name="State" value="@Model.State" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Country</label>
+                <input class="form-control" type="text" name="Country" value="@Model.Country" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

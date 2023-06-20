@@ -38,7 +38,7 @@ namespace eStoreAPI.Controllers
             return Ok(result);
         }
 
-        [HttpPost("Login")]
+        [HttpPost("Login")]         
         public ActionResult<GetMemberResponse> Login([FromBody] FormLogin formLogin)
         {
             Member member = memberRepository.FindMemberByEmailAndPw(formLogin.Email, formLogin.Password);

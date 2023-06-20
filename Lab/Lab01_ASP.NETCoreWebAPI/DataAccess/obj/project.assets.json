@@ -2381,11 +2381,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\",
-      "outputPath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\obj\\",
+      "outputPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nguyen Tien Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2402,8 +2402,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
+            "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

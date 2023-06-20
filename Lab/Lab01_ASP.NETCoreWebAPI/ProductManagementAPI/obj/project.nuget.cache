@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x+nA3J+CGTRtVkOE/SlYKAmrbcMCUWAn/gJkEoduacQVaNELNgLcJeVcHA9pgbKeN8ckpI5bnRCE5CPonFcq3g==",
+  "dgSpecHash": "Eqby2pc2cYsY419s7HjznP3Zkf9o+M9+/w354IyEX2CZ/gwHqBOhJaK3YTX7CAj/xY6YE++UXUxJdtpjIjbVPA==",
   "success": true,
-  "projectFilePath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\ProductManagementAPI\\ProductManagementAPI.csproj",
+  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\ProductManagementAPI\\ProductManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

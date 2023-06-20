@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {}
+    "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\",
-        "outputPath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\obj\\",
+        "outputPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nguyen Tien Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,212 @@
+﻿@using BusinessObject.DTO.BookDTO;
+@using eBookStoreClient.Models;
+@model BookIndexModel;
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Enter Book Information</h1>
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Book/Create">
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label class="control-label">Title</label>
+                <input class="form-control" type="text" name="Title" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Type</label>
+                <input class="form-control" type="text" name="Type" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">PublisherId</label>
+                <select class="form-control" name="PubId">
+                    @foreach (var item in ViewBag.pubs)
+                    {
+                        <option value="@item.PubId">@item.PublisherName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Price</label>
+                <input class="form-control" type="text" name="Price" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Advance</label>
+                <input class="form-control" type="text" name="Advance" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Royalty</label>
+                <input class="form-control" type="text" name="Royalty" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">YtdSales</label>
+                <input class="form-control" type="text" name="YtdSales" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Notes</label>
+                <input class="form-control" type="text" name="Notes" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">PublishedDate</label>
+                <input class="form-control" type="datetime-local" name="PublishedDate" required />
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<h1>List Book</h1>
+
+<table class="table">
+    <form asp-action="Index" id="searchBookForm">
+    <thead style="background-color: cadetblue">
+        <tr>
+            <th>
+                BookId
+                <input class="form-control p-0" placeholder="Search" type="text" asp-for="SearchBook.BookId" id="searchBookId" />
+            </th>
+            <th>
+                Title
+                <input class="form-control p-0" placeholder="Search" type="text" asp-for="SearchBook.Title" id="searchTitle" />
+            </th>
+            <th>
+                Type
+                <input class="form-control p-0" placeholder="Search" type="text" asp-for="SearchBook.Type" id="searchType" />
+            </th>
+            <th>
+                PublisherId
+                <input class="form-control p-0" readonly  type="text" asp-for="SearchBook.PubId" id="searchPubId" />
+            </th>
+            <th>
+                Price
+                <input class="form-control p-0" placeholder="Search" type="text" asp-for="SearchBook.Price" id="searchPrice" />
+            </th>
+            <th>
+                Advance
+                <input class="form-control p-0" readonly  type="text" asp-for="SearchBook.Advance" id="searchAdvance" />
+            </th>
+            <th>
+                Royalty
+                <input class="form-control p-0" readonly type="text" asp-for="SearchBook.Royalty" id="searchRoyalty" />
+
+            </th>
+            <th>
+                YtdSales
+                <input class="form-control p-0" readonly type="text" asp-for="SearchBook.YtdSales" id="searchYtdSales" />
+
+            </th>
+            <th>
+                Notes
+                <input class="form-control p-0" placeholder="Search" type="text" asp-for="SearchBook.Notes" id="searchNotes" />
+
+            </th>
+            <th>
+                PublishedDate
+            </th>
+            <th>
+
+                Action
+            </th>
+        </tr>
+    </thead>
+    </form>
+    <tbody>
+        @foreach (var (item, index) in Model.BookLists.Select((value, i) => (value, i + 1)))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PubId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Advance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Royalty)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YtdSales)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Notes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublishedDate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BookId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BookId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    document.getElementById("searchBookId").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchTitle").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchType").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchPubId").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchPrice").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchAdvance").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchRoyalty").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchYtdSales").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+    document.getElementById("searchNotes").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchBookForm").submit();
+        }
+    });
+</script>

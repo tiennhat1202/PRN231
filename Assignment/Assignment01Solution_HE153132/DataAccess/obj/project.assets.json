@@ -2302,11 +2302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nguyen Tien Nhat\\Desktop\\Assignment_01\\Assignment01Solution_HE153132\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment01Solution_HE153132\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Nguyen Tien Nhat\\Desktop\\Assignment_01\\Assignment01Solution_HE153132\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment01Solution_HE153132\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nguyen Tien Nhat\\Desktop\\Assignment_01\\Assignment01Solution_HE153132\\DataAccess\\obj\\",
+      "outputPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment01Solution_HE153132\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nguyen Tien Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2323,8 +2323,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Nguyen Tien Nhat\\Desktop\\Assignment_01\\Assignment01Solution_HE153132\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Users\\Nguyen Tien Nhat\\Desktop\\Assignment_01\\Assignment01Solution_HE153132\\BusinessObject\\BusinessObject.csproj"
+            "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment01Solution_HE153132\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment01Solution_HE153132\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

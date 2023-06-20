@@ -1,0 +1,15 @@
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\bin\Debug\net6.0\BusinessObject.deps.json
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\bin\Debug\net6.0\BusinessObject.runtimeconfig.json
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\bin\Debug\net6.0\BusinessObject.dll
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\bin\Debug\net6.0\BusinessObject.pdb
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.AssemblyReference.cache
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfoInputs.cache
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfo.cs
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.CoreCompileInputs.cache
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.dll
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\refint\BusinessObject.dll
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.pdb
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll
+C:\FU_Learning\SU_23\Git\PRN231\Assignment\Assignment02Solution_HE153132\BusinessObject\bin\Debug\net6.0\appsettings.json

@@ -1,0 +1,71 @@
+﻿@using BusinessObject.DTO.BookDTO;
+@model BookDTO;
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form method="post" action="/Book/Edit">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input class="form-control" type="text" name="id" value="@Model.BookId" hidden />
+            </div>
+            <div class="form-group">
+                <label class="control-label">BookId</label>
+                <input class="form-control" type="text" name="BookId" value="@Model.BookId" readonly />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Title</label>
+                <input class="form-control" type="text" name="Title" value="@Model.Title" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Type</label>
+                <input class="form-control" type="text" name="Type" value="@Model.Type" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">PublisherName</label>
+                <select class="form-control" name="PubId">
+                    @foreach (var item in ViewBag.pubs)
+                    {
+                        <option value="@item.PubId" selected="@(item.PubId == Model.PubId)">@item.PublisherName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Price</label>
+                <input class="form-control" type="text" name="Price" value="@Model.Price" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Advance</label>
+                <input class="form-control" type="text" name="Advance" value="@Model.Advance" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Royalty</label>
+                <input class="form-control" type="text" name="Royalty" value="@Model.Royalty" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">YtdSales</label>
+                <input class="form-control" type="text" name="YtdSales" value="@Model.YtdSales" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Notes</label>
+                <input class="form-control" type="text" name="Notes" value="@Model.Notes" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">PublishedDate</label>
+                <input class="form-control" type="text" name="PublishedDate" value="@Model.PublishedDate" required />
+            </div>
+
+            <div class="form-group pt-3">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

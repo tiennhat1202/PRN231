@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yOp1coiaVJm8Dc2i5otXleLtorh1MspwDNV6bCbQagvygIomQJ6eJQjnENxiJ7LB8bcwvOSZ7CBLOji1n6u0dg==",
+  "dgSpecHash": "Jw96cQILPIwV40byvH1asgGZ909gVXTH0GtXVQlDMD6RGdoTsnl7AkY/A0qgCycFLfTmbAePNmEjUgOrXYf2/g==",
   "success": true,
-  "projectFilePath": "C:\\FU_Learning\\SU_23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\ProductManagementWebClient\\ProductManagementWebClient.csproj",
+  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\ProductManagementWebClient\\ProductManagementWebClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
