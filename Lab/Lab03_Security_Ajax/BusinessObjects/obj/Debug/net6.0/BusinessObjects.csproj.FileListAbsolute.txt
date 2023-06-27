@@ -1,0 +1,15 @@
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\bin\Debug\net6.0\BusinessObjects.deps.json
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\bin\Debug\net6.0\BusinessObjects.runtimeconfig.json
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\bin\Debug\net6.0\BusinessObjects.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\bin\Debug\net6.0\BusinessObjects.pdb
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfo.cs
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjects.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\BusinessObjects\bin\Debug\net6.0\appsettings.json

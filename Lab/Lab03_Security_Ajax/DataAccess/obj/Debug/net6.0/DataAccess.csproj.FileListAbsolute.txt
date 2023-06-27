@@ -1,0 +1,16 @@
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\BusinessObjects.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\bin\Debug\net6.0\BusinessObjects.pdb
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Git\PRN231\Lab\Lab03_Security_Ajax\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
