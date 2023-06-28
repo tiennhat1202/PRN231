@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj": {}
+    "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\obj\\",
+        "outputPath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Nguyen Tien Nhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

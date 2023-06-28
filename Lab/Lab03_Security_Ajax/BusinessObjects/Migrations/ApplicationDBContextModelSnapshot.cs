@@ -21,7 +21,7 @@ namespace BusinessObjects.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("BusinessObjects.Category", b =>
+            modelBuilder.Entity("BusinessObjects.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -81,7 +81,7 @@ namespace BusinessObjects.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BusinessObjects.Product", b =>
+            modelBuilder.Entity("BusinessObjects.Models.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -110,9 +110,9 @@ namespace BusinessObjects.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("BusinessObjects.Product", b =>
+            modelBuilder.Entity("BusinessObjects.Models.Product", b =>
                 {
-                    b.HasOne("BusinessObjects.Category", "Category")
+                    b.HasOne("BusinessObjects.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -121,7 +121,7 @@ namespace BusinessObjects.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("BusinessObjects.Category", b =>
+            modelBuilder.Entity("BusinessObjects.Models.Category", b =>
                 {
                     b.Navigation("Products");
                 });

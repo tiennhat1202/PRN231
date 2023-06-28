@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XeLbitYmoPITr3XJyqyRLHPaXYolWfjXzNWPd1UeUkGExva6Sz67JBNyUr1fakyeAbIteAXuanlMDb7eKgijrg==",
+  "dgSpecHash": "LSOeFm899W4tOrp+bKdhh4H/ZfvppodpdWuos82iAnl9WcilAo1i7p9vkuRPNfJaFUugkXBbe7JYf3mAkPAGrw==",
   "success": true,
-  "projectFilePath": "D:\\Git\\PRN231\\Assignment\\Assignment02Solution_HE153132\\eBookStoreClient\\eBookStoreClient.csproj",
+  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Assignment\\Assignment02Solution_HE153132\\eBookStoreClient\\eBookStoreClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
