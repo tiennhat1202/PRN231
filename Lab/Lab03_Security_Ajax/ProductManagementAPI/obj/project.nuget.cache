@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4WhbLxZqz1KIkLzl3QE1zCgXlWiJUpO+ZW3zUbt4XZn5C4sUCnuj4tABd0cdAX8Pd17xkDYrB1NfQ0XoentmPw==",
+  "dgSpecHash": "+1Yp2CyygLteUpJSQpKMZ05frSlNfp5aHVPFJh05xmZ01fvhCYJZghVO9iBLHaI9Tn+pd6i1o3qN3/ZpJO+mOw==",
   "success": true,
-  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\ProductManagementAPI\\ProductManagementAPI.csproj",
+  "projectFilePath": "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\ProductManagementAPI\\ProductManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
