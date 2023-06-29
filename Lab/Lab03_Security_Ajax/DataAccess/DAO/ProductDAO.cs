@@ -65,6 +65,7 @@ namespace DataAccess.DAO
                 using (var context = new ApplicationDBContext())
                 {
                     context.Entry<Product>(product).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                   // context.Products.Update(product);
                     context.SaveChanges();
                 }
             }

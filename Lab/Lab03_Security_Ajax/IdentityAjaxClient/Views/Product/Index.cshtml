@@ -8,19 +8,57 @@
 
 <div class="container-fluid">
     <h2>Product List</h2>
-    <table class="table table-sm table-striped table-bordered m-2">
+    <div class="mb-3 ms-2">
+        <button class="btn btn-outline-primary" id="addProductBtn">Add Product</button>
+    </div>
+    <table class="table table-sm table-striped table-bordered m-2 text-center">
         <thead>
-            <tr>
+            <tr style="color: white; background-color: deepskyblue">
                 <th>ProductID</th>
                 <th>Product Name</th>
-                <th>Quantity</th>
+                <th>Category</th>
+                <th>UnitsInStock</th>
                 <th>Unit Price</th>
-                <th>Update</th>
-                <th>Delete</th>
+                <th>Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody></tbody>
     </table>
+</div>
+
+<!-- Modal for Add Product -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="productName" class="form-label">Product Name</label>
+                    <input type="text" class="form-control" id="productName">
+                </div>
+                <div class="mb-3">
+                    <label for="categoryId" class="form-label">Category</label>
+                    <select class="form-select" id="categoryId"></select>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="quantity">
+                </div>
+                <div class="mb-3">
+                    <label for="unitPrice" class="form-label">Unit Price</label>
+                    <input type="number" step="0.01" class="form-control" id="unitPrice">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="saveAdd">Add Product</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Modal for Update -->
@@ -36,6 +74,10 @@
                 <div class="mb-3">
                     <label for="updateProductName" class="form-label">Product Name</label>
                     <input type="text" class="form-control" id="updateProductName">
+                </div>
+                <div class="mb-3">
+                    <label for="updateCategoryId" class="form-label">Category</label>
+                    <select class="form-select" id="updateCategoryId"></select>
                 </div>
                 <div class="mb-3">
                     <label for="updateQuantity" class="form-label">Quantity</label>
@@ -56,81 +98,181 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         ShowAllProducts();
 
-        function ShowAllProducts(){
-            $("table tbody").html("");
-            $.ajax({
+        ////Show Product
+        //function ShowAllProducts() {
+        //    $("table tbody").html("");
+        //    $.ajax({
+        //        url: "https://localhost:7067/api/Products",
+        //        type: "get",
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: "json",
+        //        success: function (result, status, xhr) {
+        //            $.each(result, function (index, value) {
+        //                $("tbody").append($("<tr>"));
+        //                appendElement = $("tbody tr").last();
+        //                appendElement.append($("<td>").html(value["productId"]));
+        //                appendElement.append($("<td>").html(value["productName"]));
+        //                appendElement.append($("<td>").html(value["categoryId"]));
+        //                //appendElement.append($("<td>").html(value["categoryName"]));
+        //                appendElement.append($("<td>").html(value["unitsInStock"]));
+        //                appendElement.append($("<td>").html(value["unitPrice"]));
+        //                //  appendElement.append($("<td>").html("<a href=\"?id=" +value["productId"] + "\"><img src=\"icon/edit.png\" /></a> "));
+        //                appendElement.append($("<td>").html("<button class=\"btn btn-outline-warning update\" data-id=\"" + value["productId"] + "\">Update</button>"));
+        //                appendElement.append($("<td>").html("<button class=\"btn btn-outline-danger delete\">Delete</button>"));
+        //            });
+        //        },
+        //        error: function (xhr, status, error) {
+        //            console.log(xhr)
+        //        }
+        //    });
+        //}
+        ////show Product End
+
+        function ShowAllProducts() {
+            var productsResult, categoriesResult;
+
+            // Make the first API call to fetch products
+            var productsPromise = $.ajax({
                 url: "https://localhost:7067/api/Products",
                 type: "get",
                 contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function(result, status, xhr){
-                    $.each(result, function(index, value){
-                        $("tbody").append($("<tr>"));
-                        appendElement = $("tbody tr").last();
-                        appendElement.append($("<td>").html(value["productId"]));
-                        appendElement.append($("<td>").html(value["productName"]));
-                        appendElement.append($("<td>").html(value["unitsInStock"]));
-                        appendElement.append($("<td>").html(value["unitPrice"]));
-                      //  appendElement.append($("<td>").html("<a href=\"?id=" +value["productId"] + "\"><img src=\"icon/edit.png\" /></a> "));
-                        appendElement.append($("<td>").html("<a href=\"#\" class=\"update\" data-id=\"" + value["productId"] + "\"><img src=\"icon/edit.png\" /></a>"));
+                dataType: "json"
+            }).done(function (result) {
+                // Store the result in the productsResult variable
+                productsResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
 
-                        appendElement.append($("<td>").html("<img class=\"delete\" src=\"icon/close.png\" />"));
-                    });
-                },
-                error: function(xhr , status, error){
-                    console.log(xhr)
-                }
+            // Make the second API call to fetch categories
+            var categoriesPromise = $.ajax({
+                url: "https://localhost:7067/api/Categorys",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                // Store the result in the categoriesResult variable
+                categoriesResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+            // Wait for both API calls to finish
+            $.when(productsPromise, categoriesPromise).done(function () {
+                // Both API calls have completed, you can now use the results
+
+                // Clear the table body
+                $("table tbody").html("");
+                var categoryMap = {};
+                $.each(categoriesResult, function (index, category) {
+                    categoryMap[category.categoryId] = category.categoryName;
+                });
+                // Iterate over the products result and populate the table
+                $.each(productsResult, function (index, value) {
+                    var appendElement = $("<tr>");
+                    appendElement.append($("<td>").html(value["productId"]));
+                    appendElement.append($("<td>").html(value["productName"]));
+                    appendElement.append($("<td>").html(categoryMap[value["categoryId"]]));
+                    appendElement.append($("<td>").html(value["unitsInStock"]));
+                    appendElement.append($("<td>").html(value["unitPrice"]));
+                    appendElement.append($("<td>").html("<button class=\"btn btn-outline-warning update\" data-id=\"" + value["productId"] + "\">Update</button>"));
+                    appendElement.append($("<td>").html("<button class=\"btn btn-outline-danger delete\">Delete</button>"));
+                    $("tbody").append(appendElement);
+                });
+
+                // Iterate over the categories result and populate the select element
+                var selectElement = $("#categoryId");
+                selectElement.empty();
+                $.each(categoriesResult, function (index, category) {
+                    selectElement.append($("<option>").attr("value", category.categoryId).text(category.categoryName));
+                });
             });
         }
-        
-        $("table").on("click", "img.delete", function(){
-            var productId = $(this).parents("tr").find("td:nth-child(1)").text();
-            $.ajax({
-                url: "https://localhost:7067/api/Products/" + productId,
-                type: "delete",
-                contentType: "application/json",
-                success: function (result, status, xhr){
-                    ShowAllProducts();
-                },
-                error: function(xhr, status, error){
-                    console.log(xhr)
-                }
-            });
-        });
-        
 
-        $("table").on("click", "a.update", function (e) {
+
+
+        // Delete Product
+        $("table").on("click", "button.delete", function () {
+            var productId = $(this).parents("tr").find("td:nth-child(1)").text();
+            var productName = $(this).parents("tr").find("td:nth-child(2)").text();
+
+            if (confirm("Are you sure you want to delete the product '" + productName + "'?")) {
+                $.ajax({
+                    url: "https://localhost:7067/api/Products/" + productId,
+                    type: "delete",
+                    contentType: "application/json",
+                    success: function (result, status, xhr) {
+                        ShowAllProducts();
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr)
+                    }
+                });
+            }
+        });
+        //Delete Product End
+
+        //Update Product
+        $("table").on("click", "button.update", function (e) {
             e.preventDefault();
 
             var productId = $(this).data("id");
             var productName = $(this).parents("tr").find("td:nth-child(2)").text();
-            var quantity = $(this).parents("tr").find("td:nth-child(3)").text();
-            var unitPrice = $(this).parents("tr").find("td:nth-child(4)").text();
+            var categoryId = $(this).parents("tr").find("td:nth-child(3)").text();
+            //  var categoryName = $(this).parents("tr").find("td:nth-child(3)").text();
+            var unitsInStock = $(this).parents("tr").find("td:nth-child(4)").text();
+            var unitPrice = $(this).parents("tr").find("td:nth-child(5)").text();
 
             $("#updateProductId").val(productId);
             $("#updateProductName").val(productName);
-            $("#updateQuantity").val(quantity);
+            $("#updateCategoryId").val(categoryId);
+            $("#updateQuantity").val(unitsInStock);
             $("#updateUnitPrice").val(unitPrice);
 
-            $("#updateModal").modal("show");
+            $.ajax({
+                url: "https://localhost:7067/api/Categorys",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result, status, xhr) {
+                    var selectElement = $("#updateCategoryId");
+                    selectElement.empty(); // Clear previous options
+
+                    $.each(result, function (index, category) {
+                        var option = $("<option>").attr("value", category.categoryId).text(category.categoryName);
+                        // var option = $("<option>").attr("value", category.categoryName).text(category.categoryName);
+                        if (category.categoryId == categoryId) {
+                            option.attr("selected", "selected"); // Set selected option
+                        }
+                        selectElement.append(option);
+                    });
+
+                    $("#updateModal").modal("show");
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr)
+                }
+            });
         });
 
         $("#saveUpdate").click(function () {
             var productId = $("#updateProductId").val();
             var newProductName = $("#updateProductName").val();
+            var newCategoryId = $("#updateCategoryId").val();
+            //var newCategoryName = $("#updateCategoryId").val();
             var newQuantity = parseInt($("#updateQuantity").val());
             var newUnitPrice = parseFloat($("#updateUnitPrice").val());
 
             var updatedProduct = {
                 productId: productId,
                 productName: newProductName,
+                categoryId: newCategoryId,
                 unitsInStock: newQuantity,
                 unitPrice: newUnitPrice
             };
-
+            console.log("Update Product: " + JSON.stringify(updatedProduct));
             $.ajax({
                 url: "https://localhost:7067/api/Products/" + productId,
                 type: "put",
@@ -139,6 +281,64 @@
                 success: function (result, status, xhr) {
                     $("#updateModal").modal("hide");
                     ShowAllProducts();
+
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        });
+        //Update Product End
+
+        //Add Product
+
+        //Fetch Category
+        $.ajax({
+            url: "https://localhost:7067/api/Categorys",
+            type: "get",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result, status, xhr) {
+                var selectElement = $("#categoryId");
+                $.each(result, function (index, category) {
+                    selectElement.append($("<option>").attr("value", category.categoryId).text(category.categoryName));
+                });
+            },
+            error: function (xhr, status, error) {
+                console.log(xhr)
+            }
+        });
+
+        $("#addProductBtn").click(function () {
+            $("#productName").val("");
+            $("#categoryId").val("");
+            $("#quantity").val("");
+            $("#unitPrice").val("");
+            $("#addModal").modal("show");
+        });
+
+        $("#saveAdd").click(function () {
+            var newProductName = $("#productName").val();
+            var newCategoryId = parseInt($("#categoryId").val());
+            var newUnitsInStock = parseInt($("#quantity").val());
+            var newUnitPrice = parseFloat($("#unitPrice").val());
+
+            var newProduct = {
+                productId: 0,
+                productName: newProductName,
+                categoryId: newCategoryId,
+                unitsInStock: newUnitsInStock,
+                unitPrice: newUnitPrice
+            };
+            console.log("Add Product: " + JSON.stringify(newProduct));
+            $.ajax({
+                url: "https://localhost:7067/api/Products",
+                type: "post",
+                data: JSON.stringify(newProduct),
+                contentType: "application/json",
+                success: function (result, status, xhr) {
+                    $("#addModal").modal("hide");
+                    ShowAllProducts();
                 },
                 error: function (xhr, status, error) {
                     console.log(xhr);
@@ -146,5 +346,12 @@
             });
         });
 
+        //Add Product End
     });
+            //appendElement.append($("<td>").html(value["categoryName"])); Line: 118
+            //var categoryName = $(this).parents("tr").find("td:nth-child(3)").text(); Line:158
+            //var option = $("<option>").attr("value", category.categoryName).text(category.categoryName); Line: 178
+            //var newCategoryName = $("#updateCategoryId").val(); Line: 196
+
 </script>
+
