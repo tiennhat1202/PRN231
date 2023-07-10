@@ -2,7 +2,7 @@
 using BusinessObject.DTO.RoleDTO;
 using BusinessObject.Models;
 
-namespace eBookStoreAPI.Services
+namespace eBookStoreApi.Services
 {
     public class RoleMapper : Profile
     {

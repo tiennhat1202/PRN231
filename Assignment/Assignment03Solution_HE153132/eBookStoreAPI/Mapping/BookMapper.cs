@@ -2,7 +2,7 @@
 using BusinessObject.DTO.BookDTO;
 using BusinessObject.Models;
 
-namespace eBookStoreAPI.Mapping
+namespace eBookStoreApi.Mapping
 {
     public class BookMapper : Profile
     {

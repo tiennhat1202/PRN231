@@ -1,4 +1,4 @@
-namespace eBookStoreAPI
+namespace eBookStoreApi
 {
     public class WeatherForecast
     {

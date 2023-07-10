@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "449GVUMTFBV8NlUmRfSnkMjl0A86TLkn6zV77Y1ZyXI=",
-  "Source": "eBookStoreAPI",
-  "BasePath": "_content/eBookStoreAPI",
+  "Hash": "eXJeFBre0ItNhQh+H/LNEhjAoMy942HSk1xXMZTyoY0=",
+  "Source": "eBookStoreApi",
+  "BasePath": "_content/eBookStoreApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

@@ -2,7 +2,7 @@
 using BusinessObject.Models;
 using BusinessObject.DTO.AuthorDTO;
 
-namespace eBookStoreAPI.Services
+namespace eBookStoreApi.Services
 {
     public class AuthorMapper : Profile
     {

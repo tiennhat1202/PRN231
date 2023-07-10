@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace eBookStoreAPI.Controllers
+namespace eBookStoreApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

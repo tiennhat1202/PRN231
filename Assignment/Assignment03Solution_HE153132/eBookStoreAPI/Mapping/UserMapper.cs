@@ -2,7 +2,7 @@
 using BusinessObject.DTO.UserDTO;
 using BusinessObject.Models;
 
-namespace eBookStoreAPI.Services
+namespace eBookStoreApi.Services
 {
     public class UserMapper : Profile
     {

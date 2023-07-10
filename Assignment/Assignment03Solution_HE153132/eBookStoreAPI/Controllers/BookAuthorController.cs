@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using System.Collections;
 
-namespace eBookStoreAPI.Controllers
+namespace eBookStoreApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

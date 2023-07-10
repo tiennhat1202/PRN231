@@ -1,11 +1,11 @@
-using BusinessObject.DBContext;
 using DataAccess.DAO;
 using DataAccess.IDAO;
 using DataAccess.IRepository;
 using DataAccess.Repository;
-using eBookStoreAPI.Mapping;
-using eBookStoreAPI.Services;
+using eBookStoreApi.Mapping;
+using eBookStoreApi.Services;
 using Microsoft.AspNetCore.OData;
+using BusinessObject.DBContext;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,8 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddCors();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,6 +23,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlServer(connectionString);
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
+
 builder.Services.AddControllers().AddOData(option => option.Select().Filter().Count().OrderBy().Expand().SetMaxTop(100));
 
 builder.Services.AddScoped<IAuthorDAO, AuthorDAO>();
@@ -45,8 +44,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 
 builder.Services.AddAutoMapper(typeof(AuthorMapper));
-builder.Services.AddAutoMapper(typeof(BookMapper));
 builder.Services.AddAutoMapper(typeof(BookAuthorMapper));
+builder.Services.AddAutoMapper(typeof(BookMapper));
 builder.Services.AddAutoMapper(typeof(PublisherMapper));
 builder.Services.AddAutoMapper(typeof(RoleMapper));
 builder.Services.AddAutoMapper(typeof(UserMapper));
@@ -60,10 +59,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors(builder =>
-{
-    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-});
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
