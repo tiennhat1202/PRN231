@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "DataAccess/1.0.0": {
         "dependencies": {
-          "BussinessObject": "1.0.0"
+          "BusinessObject": "1.0.0"
         },
         "runtime": {
           "DataAccess.dll": {}
@@ -561,14 +561,14 @@
           }
         }
       },
-      "BussinessObject/1.0.0": {
+      "BusinessObject/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0"
         },
         "runtime": {
-          "BussinessObject.dll": {}
+          "BusinessObject.dll": {}
         }
       }
     }
@@ -915,7 +915,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "BussinessObject/1.0.0": {
+    "BusinessObject/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3yvfpHknFlByy747sjA7lb/8kwB2voxag+c5nOAPUxFotVAqCjPp3vv5JpuP9wT2Um6CKbiX/Rn8ZCOBDTPhQ==",
+  "dgSpecHash": "58klNHfjmiHIB0uw5aa7tE1PPBy07LewjWj86SExvN/QmSRuKjfoljC4D+ka/d0Lq6ZEIiN1eYfJLpyr3UhR0A==",
   "success": true,
-  "projectFilePath": "C:\\FU_Learning\\SU_23\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\IdentityAjaxClient\\IdentityAjaxClient.csproj",
+  "projectFilePath": "D:\\Git\\PRN231\\Lab\\Lab03_Security_Ajax\\IdentityAjaxClient\\IdentityAjaxClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Nguyen Tien Nhat\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -12,7 +12,7 @@ namespace DataAccess.DAO
 {
     public class AuthorDAO : IAuthorDAO
     {
-            
+
         private readonly ApplicationDBContext _applicationDBContext;
 
         public AuthorDAO(ApplicationDBContext applicationDBContext)
