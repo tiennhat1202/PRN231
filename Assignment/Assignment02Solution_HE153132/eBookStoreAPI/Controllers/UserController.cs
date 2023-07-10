@@ -58,7 +58,7 @@ namespace eBookStoreAPI.Controllers
         [HttpPost("login")]
         public ActionResult Login([FromBody] UserFormLoginDTO userForm)
         {
-            User user = _userRepository.Get(userForm.EmailAddress, userForm.Password);
+            User user = _userRepository.Get (userForm.EmailAddress, userForm.Password);
             if (user == null)
             {
                 return BadRequest();

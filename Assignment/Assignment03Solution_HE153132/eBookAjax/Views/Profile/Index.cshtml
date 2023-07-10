@@ -1,0 +1,193 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var userEmail = ViewBag.UserEmail;
+    var password = ViewBag.Password;
+    var role = ViewBag.Role;
+}
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+                <a href="Book" class="app-brand-link">
+                    <span>BookStore</span>
+                </a>
+            </div>
+
+            <div class="menu-inner-shadow"></div>
+
+            <ul class="menu-inner py-1">
+                <!-- Dashboard -->
+                @if (role != "Admin")
+                {
+                    <li class="menu-item">
+                        <a href="Profile" class="menu-link">
+                            <div data-i18n="Profile">Profile</div>
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="menu-item">
+                        <a href="Profile" class="menu-link">
+                            <div data-i18n="Profile">Profile</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Home" class="menu-link">
+                            <div data-i18n="Home">Home</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="Publisher" class="menu-link">
+                            <div data-i18n="Publisher">Publisher</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Author" class="menu-link">
+                            <div data-i18n="Author">Author</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Book" class="menu-link">
+                            <div data-i18n="Book">Book</div>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h5 class="card-header d-flex justify-content-between">Update Profile</h5>
+
+                    <div class="mb-3">
+                        <input type="hidden" id="userId">
+                        <input type="hidden" id="pubId">
+                        <input type="hidden" id="roleId">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">EmailAddress</label>
+                        <input type="text" class="form-control" id="emailAddress" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" minlength="6">
+                    </div>
+                    <div class="mb-3">
+                        <label for="source" class="form-label">Source</label>
+                        <input type="text" class="form-control" id="source">
+                    </div>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">FristName</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="middleName" class="form-label">MiddleName</label>
+                        <input type="text" class="form-control" id="middleName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">LastName</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hireDate" class="form-label">HireDate</label>
+                        <input type="datetime-local" class="form-control" id="hireDate">
+                    </div>
+                    <button type="button" class="btn btn-primary">Update</button>
+
+                </div>
+                <!-- / Content -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        // Lấy giá trị userEmail từ view
+        var usn = "@userEmail";
+        var pw = "@password"
+
+        showProfile();
+        function showProfile() {
+            $.ajax({
+                url: "https://localhost:7026/api/User?$filter=contains(emailAddress, '" + usn + "') and contains(password, '" + pw + "')",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result, status, xhr) {
+                    $.each(result, function (index, value) {
+                        console.log(value);
+                        $("#userId").val(value["userId"]);
+                        $("#emailAddress").val(value["emailAddress"]);
+                        $("#password").val(value["password"]);
+                        $("#source").val(value["source"]);
+                        $("#firstName").val(value["firstName"]);
+                        $("#middleName").val(value["middleName"]);
+                        $("#lastName").val(value["lastName"]);
+                        $("#hireDate").val(value["hireDate"]);
+                        $("#roleId").val(value["roleId"]);
+                        $("#pubId").val(value["pubId"]);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        }
+        $(".btn-primary").click(function () {
+            var userId = $("#userId").val();
+            var userDate = {
+                userId: $("#userId").val(),
+                emailAddress: $("#emailAddress").val(),
+                password: $("#password").val(),
+                source: $("#password").val(),
+                firstName: $("#firstName").val(),
+                middleName: $("#middleName").val(),
+                lastName: $("#lastName").val(),
+                hireDate: $("#hireDate").val(),
+                roleId: $("#roleId").val(),
+                pubId: $("#pubId").val()
+            };
+            $.ajax({
+                url: "https://localhost:7026/api/User/" + userId,
+                type: "put",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(userDate),
+                success: function (result, status, xhr) {
+                    showProfile();
+                    // Show success toast notification
+                    toastr.success('Update User successfully.', 'Success', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-success',
+                        timeOut: 3000
+                    });
+                },
+                error: function (xhr, status, error) {
+                    showProfile();
+                    toastr.success('Update User Error', 'Error', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-error',
+                        timeOut: 3000
+                    });
+                }
+            });
+        });
+    });
+</script>
