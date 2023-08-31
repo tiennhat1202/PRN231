@@ -1,0 +1,581 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <partial name="_AsideAdmin" />
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-fluid flex-grow-1 container-p-y">
+                    <!-- Basic Bootstrap Table -->
+                    <div class="card">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-header">Booking List</h5>
+                            <input type="text" id="searchInput" placeholder="Search..." aria-label="Search" />
+                        </div>
+                        <div class="table-responsive text-nowrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>BookingId</th>
+                                        <th>RoomName</th>
+                                        <th>Username</th>
+                                        <th>CheckInDate</th>
+                                        <th>CheckOutDate</th>
+                                        <th>TotalPrice</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="booking" class="table-border-bottom-0">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <div class="pagination">
+                                <a href="#" class="previous">Previous</a>
+                                <a href="#" class="page-number">1</a>
+                                <a href="#" class="page-number">2</a>
+                                <a href="#" class="page-number">3</a>
+                                <a href="#" class="next">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Basic Bootstrap Table -->
+                </div>
+                <!-- / Content -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+
+<!-- Modal Nhận phòng -->
+<div class="modal fade" id="checkInModal" tabindex="-1" role="dialog" aria-labelledby="checkInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkInModalLabel">Nhận phòng</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="bookingId">BookingId:</label>
+                    <input type="text" class="form-control" id="bookingId" readonly>
+                    <input type="hidden" class="form-control" id="roomId">
+                    <input type="hidden" class="form-control" id="userId">
+                </div>
+                <div class="form-group">
+                    <label for="roomName">RoomName:</label>
+                    <input type="text" class="form-control" id="roomName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="checkInDate">CheckInDate:</label>
+                    <input type="text" class="form-control" id="checkInDate" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">CheckOutDate:</label>
+                    <input type="text" class="form-control" id="checkOutDate" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="totalPrice">TotalPrice:</label>
+                    <input type="text" class="form-control" id="totalPrice" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <input type="text" class="form-control" id="status">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Tiếp nhận phòng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Thanh toán</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="paymentId">
+                <div class="form-group">
+                    <label for="bookingIdPayment">BookingId:</label>
+                    <input type="text" class="form-control" id="bookingIdPayment" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="usernamePayment">Username:</label>
+                    <input type="text" class="form-control" id="usernamePayment" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="roomNamePayment">RoomName:</label>
+                    <input type="text" class="form-control" id="roomNamePayment" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">PaymentMethod:</label>
+                    <select class="form-select" id="paymentMethod">
+                        <option value="Cash">Cash</option>
+                        <option value="Banking">Bank Tranfer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="paymentDate">PaymentDate:</label>
+                    <input type="datetime-local" class="form-control" id="paymentDate">
+                </div>
+                <div class="form-group">
+                    <label for="totalPricePayment">TotalPrice:</label>
+                    <input type="text" class="form-control" id="totalPricePayment" readonly>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Xác nhận thanh toán</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .toast-success {
+        background-color: #28a745;
+    }
+
+    .toast-error {
+        background-color: #dc3545;
+    }
+
+    .toast-info {
+        background-color: #17a2b8;
+    }
+
+    .toast-warning {
+        background-color: #ffc107;
+    }
+
+    #searchInput {
+        margin-right: 5px;
+        border-radius: 5px;
+        padding-left: 15px;
+        width: 315px;
+        height: 36px
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            padding: 5px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            .pagination a:hover {
+                background-color: #eee;
+            }
+
+        .pagination .previous,
+        .pagination .next {
+            font-weight: bold;
+        }
+
+        .pagination .disabled {
+            color: #ccc;
+            pointer-events: none;
+        }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var searchInput = $("#searchInput");
+
+        var pagination = document.querySelector('.pagination');
+        var value = 0;
+        var skip = 12;
+        var top = 12;
+        var query = "";
+        var totalPrice = 0;
+
+
+
+        showAllBooking(searchInput.val(), top, value);
+
+        searchInput.on("keydown", function (event) {
+            if (event.which === 13) {
+                event.preventDefault();
+                query = searchInput.val();
+
+                if (query.trim() === "") {
+                    showAllBooking(query, top, 0);
+                } else {
+                    showAllBooking(query, top, 0);
+                }
+            }
+        });
+        pagination.addEventListener('click', function (event) {
+            var target = event.target;
+            if (target.tagName === 'A') {
+                if (target.classList.contains('page-number')) {
+                    var pageNumber = target.textContent - 1;
+                    if (pageNumber == 0) {
+                        value = 0;
+                       showAllBooking(searchInput.val(), top, value);
+                    } else {
+                        value = skip * pageNumber;
+                        showAllBooking(searchInput.val(), top, value);
+                    }
+                } else if (target.classList.contains('previous')) {
+                    if (value == 0) {
+                        value = 0;
+                        showAllBooking(searchInput.val(), top, value);
+                   }else{
+                        value -= skip;
+                        showAllBooking(searchInput.val(), top, value);
+                   }
+                   
+                } else if (target.classList.contains('next')) {
+                    value += skip;
+                    showAllBooking(searchInput.val(), top, value);
+                }
+            }
+        });
+
+
+        function showAllBooking(query, top, value) {
+            var currentDate = new Date();
+            $("#booking").html("");
+            $.ajax({
+                url: "https://localhost:7152/api/Booking?$orderby=bookingId desc&$filter=contains(tolower(username),'" + query + "')&$top=" + top + "&$skip=" + value,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (bookingResult, bookingStatus, bookingXhr) {
+                    $.ajax({
+                        url: "https://localhost:7152/api/User",
+                        type: "get",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (userResult, status, xhr) {
+                            $.ajax({
+                                url: "https://localhost:7152/api/Room",
+                                type: "get",
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (roomResult, roomStatus, roomXhr) {
+                                    var roomMap = {};
+                                    var userMap = {};
+                                    $.each(roomResult, function (index, room) {
+                                        roomMap[room.roomId] = room.roomName;
+                                    });
+
+                                    $.each(userResult, function (index, user) {
+                                        userMap[user.userId] = user.username;
+                                    });
+
+                                    $.each(bookingResult, function (index, value) {
+                                        var appendElement = $("<tr>");
+                                        appendElement.append($("<td>").html(value["bookingId"]));
+                                        appendElement.append($("<td>").html(roomMap[value["roomId"]]));
+                                        appendElement.append($("<td>").html(userMap[value["userId"]]));
+
+                                        var checkInDate = new Date(value["checkInDate"]);
+                                        var checkInDateFormatted = moment(value["checkInDate"]).format("HH [h] mm [m] YYYY-MM-DD ");
+                                        var checkInDateSpan = $("<span>").addClass("badge me-1");
+                                        if (checkInDate < currentDate) {
+                                            checkInDateSpan.addClass("bg-label-danger").text(checkInDateFormatted);
+                                        } else {
+                                            checkInDateSpan.addClass("bg-label-success").text(checkInDateFormatted);
+                                        }
+                                        appendElement.append($("<td>").append(checkInDateSpan));
+
+                                        var checkOutDate = new Date(value["checkOutDate"]);
+                                        var checkOutDateFormatted = moment(value["checkOutDate"]).format("HH [h] mm [m] YYYY-MM-DD ");
+                                        var checkOutDateSpan = $("<span>").addClass("badge me-1");
+                                        if (checkOutDate < currentDate) {
+                                            checkOutDateSpan.addClass("bg-label-danger").text(checkOutDateFormatted);
+                                        } else {
+                                            checkOutDateSpan.addClass("bg-label-success").text(checkOutDateFormatted);
+                                        }
+                                        appendElement.append($("<td>").append(checkOutDateSpan));
+
+
+                                        var roomPrice = getRoomPrice(value["roomId"], roomResult); // Lấy giá phòng từ API của Room
+
+                                        if (roomPrice !== null) {
+                                            var timeDiff = Math.abs(checkOutDate - checkInDate);
+                                            var totalDays = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+                                            totalPrice = roomPrice * totalDays;
+                                        }
+                                        var formattedPrice = totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                                        appendElement.append($("<td>").html(formattedPrice));
+
+                                        var statusSpan = $("<span>").addClass("badge me-1");
+                                        if (value["status"] === "Completed") {
+                                            statusSpan.addClass("bg-label-danger").text(value["status"]);
+                                        } else if (value["status"] === "Checked-In") {
+                                            statusSpan.addClass("bg-label-primary").text(value["status"]);
+                                        } else {
+                                            statusSpan.addClass("bg-label-success").text(value["status"]);
+                                        }
+                                        appendElement.append($("<td>").append(statusSpan));
+
+                                        $.ajax({
+                                            url: "https://localhost:7152/api/Payment?$filter=bookingId eq " + value["bookingId"],
+                                            type: "get",
+                                            contentType: "application/json; charset=utf-8",
+                                            dataType: "json"
+                                        }).done(function (result, status, xhr) {
+                                            paymentResult = result;
+                                            if (value["status"] === "Completed") {
+                                                appendElement.append($("<td>").html("<button class='btn btn-outline-info info-btn' data-payment-id='" + paymentResult[0].paymentId + "'>Chi tiết</button>"));
+                                            } else if (value["status"] === "Booked") {
+                                                appendElement.append($("<td>").html("<button class='btn btn-outline-success checkin-btn' data-booking-id='" + value["bookingId"] + "' data-total-price='" + totalPrice + "'>Nhận phòng</button>"));
+                                            } else {
+                                                appendElement.append($("<td>").html("<button class='btn btn-outline-danger payment-btn' data-booking-id='" + value["bookingId"] + "' data-total-price='" + totalPrice + "'>Thanh Toán</button>"));
+                                            }
+                                            $("#booking").append(appendElement);
+                                        }).fail(function (xhr, status, error) {
+                                            console.log(error);
+                                        });
+
+                                        $("#booking").append(appendElement);
+                                    });
+                                },
+                                error: function (roomXhr, roomStatus, roomError) {
+                                    console.log(roomXhr);
+                                }
+                            });
+
+                        },
+                        error: function (userxhr, status, error) {
+                            console.log(userxhr);
+                        }
+                    });
+                },
+                error: function (bookingXhr, bookingStatus, bookingError) {
+                    console.log(bookingXhr);
+                }
+            });
+        }
+
+        $("table").on("click", ".info-btn", function () {
+            var paymentId = $(this).data("payment-id");
+            window.location.href = '/Payment/Detail?paymentId=' + paymentId;
+
+
+        });
+
+        function getRoomPrice(roomId, roomResult) {
+            for (var i = 0; i < roomResult.length; i++) {
+                if (roomResult[i]["roomId"] === roomId) {
+                    return roomResult[i]["pricePerNight"];
+                }
+            }
+            return null;
+        }
+        // Nhận phòng
+        $("table").on("click", ".checkin-btn", function () {
+            var bookingId = $(this).data("booking-id");
+            var price = $(this).data("total-price");
+            $.ajax({
+                url: "https://localhost:7152/api/Booking/" + bookingId,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result, status, xhr) {
+                    $("#bookingId").val(result["bookingId"]);
+                    $("#checkInDate").val(result["checkInDate"]);
+                    $("#checkOutDate").val(result["checkOutDate"]);
+                    $("#totalPrice").val(price);
+                    $("#status").val(result["status"]);
+
+                    var roomId = result["roomId"];
+                    $.ajax({
+                        url: "https://localhost:7152/api/Room/" + roomId,
+                        type: "get",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (roomResult, roomStatus, roomXhr) {
+                            $("#roomName").val(roomResult["roomName"]);
+                            $("#roomId").val(result["roomId"]);
+
+                            var userId = result["userId"];
+                            $.ajax({
+                                url: "https://localhost:7152/api/User/" + userId,
+                                type: "get",
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (userResult, userStatus, roomXhr) {
+                                    $("#username").val(userResult["username"]);
+                                    $("#userId").val(result["userId"]);
+                                    // Hiển thị modal check-in
+                                    $("#checkInModal").modal("show");
+                                },
+                                error: function (roomXhr, roomStatus, roomError) {
+                                    console.log(roomXhr);
+                                }
+                            });
+
+                        },
+                        error: function (roomXhr, roomStatus, roomError) {
+                            console.log(roomXhr);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        });
+        ////Lưu nhận phòng
+        $("#checkInModal").on("click", ".btn-success", function () {
+            var bookingId = $("#bookingId").val();
+            var bookingData = {
+                bookingId: $("#bookingId").val(),
+                roomId: $("#roomId").val(),
+                userId: $("#userId").val(),
+                checkInDate: $("#checkInDate").val(),
+                checkOutDate: $("#checkOutDate").val(),
+                totalPrice: $("#totalPrice").val(),
+                status: "Checked-In"
+            };
+            $.ajax({
+                url: "https://localhost:7152/api/Booking/" + bookingId,
+                type: "put",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(bookingData),
+                success: function (result, status, xhr) {
+                    // Handle the success response
+                    showAllBooking(searchInput.val(), top, value);
+                    $("#checkInModal").modal("hide");
+                    // Show success toast notification
+                    toastr.success('Check-in successfully.', 'Success', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-info',
+                        timeOut: 3000
+                    });
+                },
+                error: function (xhr, status, error) {
+                    // Handle the error response
+                    showAllBooking(query); // Corrected function name here
+                }
+            });
+        });
+
+        // Thanh toán
+        $("table").on("click", ".payment-btn", function () {
+            var bookingId = $(this).data("booking-id");
+            var price = $(this).data("total-price");
+            $.ajax({
+                url: "https://localhost:7152/api/Booking/" + bookingId,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result, status, xhr) {
+                    $("#bookingIdPayment").val(result["bookingId"]);
+                    $("#totalPricePayment").val(price);
+                    $("#paymentDate").val();
+
+                    var roomId = result["roomId"];
+                    $.ajax({
+                        url: "https://localhost:7152/api/Room/" + roomId,
+                        type: "get",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (roomResult, roomStatus, roomXhr) {
+                            $("#roomNamePayment").val(roomResult["roomName"]);
+                            var userId = result["userId"];
+                            $.ajax({
+                                url: "https://localhost:7152/api/User/" + userId,
+                                type: "get",
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (userResult, userStatus, roomXhr) {
+                                    $("#usernamePayment").val(userResult["username"]);
+                                    $("#paymentModal").modal("show");
+                                },
+                                error: function (roomXhr, roomStatus, roomError) {
+                                    console.log(roomXhr);
+                                }
+                            });
+
+                        },
+                        error: function (roomXhr, roomStatus, roomError) {
+                            console.log(roomXhr);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        });
+        // Lưu thanh toán
+        $("#paymentModal").on("click", ".btn-danger", function () {
+            var paymentData = {
+                paymentId: 0,
+                paymentMethod: $("#paymentMethod").val(),
+                bookingId: $("#bookingIdPayment").val(),
+                paymentDate: $("#paymentDate").val(),
+            };
+            $.ajax({
+                url: "https://localhost:7152/api/Payment",
+                type: "post",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(paymentData),
+                success: function (result, status, xhr) {
+                    showAllBooking(searchInput.val(), top, value);
+                    $("#paymentModal").modal("hide");
+                    toastr.success('Payment successfully.', 'Success', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-success',
+                        timeOut: 3000
+                    });
+                },
+                error: function (xhr, status, error) {
+                    showAllBooking(query);
+                    toastr.success('Payment Error.', 'Error', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-error',
+                        timeOut: 3000
+                    });
+                }
+            });
+        });
+    });
+</script>
+

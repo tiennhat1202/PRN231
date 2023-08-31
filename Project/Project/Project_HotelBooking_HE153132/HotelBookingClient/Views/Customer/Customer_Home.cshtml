@@ -1,0 +1,265 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link href="~/css/customercss/customer_home.css" rel="stylesheet" />
+
+<div id="intro-example" class="p-5 text-center bg-image">
+    <div class="d-flex justify-content-center align-items-end h-100">
+        <div class="text-white">
+            <div class="search-box d-flex align-items-center">
+                <partial name="_SearchCustomer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="promo mb-5">
+        <div class="box-promo text-center">
+            <div class="customer-title mb-4">Khuyến mại khách hàng</div>
+        </div>
+
+        <div>
+            <div class="container text-center my-3">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel"
+                         class="carousel slide"
+                         data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card ms-2 me-2">
+                                        <div class="card-img">
+                                            <img src="https://cdn6.agoda.net/images/WebCampaign/wcDD20230630/home_banner_web/en-us.png"
+                                                 class="img-fluid" />
+                                        </div>
+                                        <div class="card-img-overlay">Slide 1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card ms-2 me-2">
+                                        <div class="card-img">
+                                            <img src="https://cdn6.agoda.net/images/WebCampaign/wcDD20230630/home_banner_web/en-us.png"
+                                                 class="img-fluid" />
+                                        </div>
+                                        <div class="card-img-overlay">Slide 2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card ms-2 me-2">
+                                        <div class="card-img">
+                                            <img src="https://cdn6.agoda.net/images/WebCampaign/wcDD20230630/home_banner_web/en-us.png"
+                                                 class="img-fluid" />
+                                        </div>
+                                        <div class="card-img-overlay">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card ms-2 me-2">
+                                        <div class="card-img">
+                                            <img src="https://cdn6.agoda.net/images/WebCampaign/wcDD20230630/home_banner_web/en-us.png"
+                                                 class="img-fluid" />
+                                        </div>
+                                        <div class="card-img-overlay">Slide 4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut"
+                           href="#recipeCarousel"
+                           role="button"
+                           data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                  aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut"
+                           href="#recipeCarousel"
+                           role="button"
+                           data-bs-slide="next">
+                            <span class="carousel-control-next-icon"
+                                  aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-destination mb-5">
+        <div class="customer-title text-center mb-4">Điểm đến thịnh hành</div>
+        <div class="destination-block mt-5">
+            <div class="card card-location">
+                <img src="https://cf.bstatic.com/xdata/images/city/600x600/688853.jpg?k=f6427c8fccdf777e4bbc75fcd245e7c66204280181bea23350388c76c57348d1&o="
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Hà Nội</a></h5>
+                </div>
+            </div>
+            <div class="card card-location">
+                <img src="https://cf.bstatic.com/xdata/images/city/600x600/688844.jpg?k=02892d4252c5e4272ca29db5faf12104004f81d13ff9db724371de0c526e1e15&o="
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"><a href="">Đà Nẵng</a></h5>
+                </div>
+            </div>
+            <div class="card card-location">
+                <img src="https://cf.bstatic.com/xdata/images/city/600x600/688907.jpg?k=8a219233969467d9f7ff828918cce2a53b4db6f1da1039d27222441ffb97c409&o="
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"><a href="">Nha Trang</a></h5>
+                </div>
+            </div>
+            <div class="card card-location">
+                <img src="https://cf.bstatic.com/xdata/images/city/600x600/688893.jpg?k=d32ef7ff94e5d02b90908214fb2476185b62339549a1bd7544612bdac51fda31&o="
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"><a href="">Tp.Hồ Chí Minh</a></h5>
+                </div>
+            </div>
+            <div class="card card-location">
+                <img src="https://cf.bstatic.com/xdata/images/city/600x600/688956.jpg?k=fc88c6ab5434042ebe73d94991e011866b18ee486476e475a9ac596c79dce818&o="
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title"><a href="">Vũng Tàu</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-hotel">
+        <div class="customer-title text-center mb-4">Tìm phòng khách sạn</div>
+        <div class="hotel-block" id="hotel-top-item">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+        <a class="d-flex justify-content-center"
+           type="button"
+           href="@Url.Action("Customer_List", "Customer")"
+           id="btn-seemore"></a>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //Load Slide Promo
+    var items = document.querySelectorAll(".carousel .carousel-item");
+
+    items.forEach((el) => {
+        const minPerSlide = 4;
+        let next = el.nextElementSibling;
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0];
+            }
+            let cloneChild = next.cloneNode(true);
+            el.appendChild(cloneChild.children[0]);
+            next = next.nextElementSibling;
+        }
+    });
+
+    //Get Data Page
+    $(document).ready(function () {
+        //loadDataPage();
+        loadHotel();
+
+        //function loadDataPage() {
+        //    var roomResult, roomTypeResult;
+        //    var roomPromise = $.ajax({
+        //        url: "https://localhost:7152/api/Room",
+        //        type: "get",
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: "json"
+        //    }).done(function (result) {
+        //        roomResult = result;
+        //    }).fail(function (xhr, status, error) {
+        //        console.log(xhr);
+        //    });
+        //    var roomTypePromise = $.ajax({
+        //        url: "https://localhost:7152/api/RoomType",
+        //        type: "get",
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: "json"
+        //    }).done(function (result) {
+        //        roomTypeResult = result;
+        //    }).fail(function (xhr, status, error) {
+        //        console.log(xhr);
+        //    });
+
+        //    $.when(roomTypePromise, roomPromise).done(function () {
+        //        $("#input-search-typeroom").html("");
+        //        for (var i = 0; i < roomTypeResult.length; i++) {
+        //            var option = $("<option>").val(roomTypeResult[i].roomTypeId).text(roomTypeResult[i].roomTypeName);
+        //            $("#input-search-typeroom").append(option);
+        //        }
+        //        // Thêm tùy chọn mặc định
+        //        var defaultOption = $("<option>").text("Chọn loại phòng").prop("selected", true).prop("disabled", true);
+        //        $("#input-search-typeroom").prepend(defaultOption);
+        //    });
+        //}
+
+        function loadHotel() {
+            var roomResult;
+            var roomPromise = $.ajax({
+                url: "https://localhost:7152/api/Room/GetRoomForHomeCustomer",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                roomResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+
+            $.when(roomPromise).done(function () {
+                $("#hotel-top-item").html("");
+                for (var i = 0; i < 8 && i < roomResult.length; i++) {
+                    var countRoom = roomResult.length;
+                    var room = roomResult[i];
+                    var imageUrl = room.roomImages.length > 0 ? room.roomImages[0].imageUrl : "";
+                    var formattedPrice = room.pricePerNight.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                    var cardHtml = `
+                            <div class="card" >
+                                 <div hidden value="${room.roomId}"></div>
+                                 <img src="${imageUrl}" class="card-img-top" alt="Room Image Empty" />
+                                 <div class="card-body">
+                                     <div class="card-info">
+                                         <div class="mt-2" id="customer-title-hotel">${room.hotelName} - <span id="customer-type-hotel">${room.roomTypeName}</span></div>
+                                         <div id="customer-location-hotel"><i class="fa-solid fa-location-dot dot-hotel"></i> ${room.address}, ${room.state}, ${room.country}</div>
+                                         <div id="customer-price-hotel">${formattedPrice}</div>
+                                    </div>
+                                </div>
+                            </div>
+                                `;
+                    $("#hotel-top-item").append(cardHtml);
+                }
+                $("#btn-seemore").text("Xem nhiều phòng hơn (" + countRoom + ")")
+
+                document.querySelectorAll('.card').forEach(function (card) {
+                    card.addEventListener('click', function () {
+                        var roomId = this.querySelector('[value]').getAttribute('value');
+                        console.log("roomId: " + roomId);
+                        // Chuyển trang với roomId được truyền qua URL
+                        window.location.href = '/Customer/Customer_Room_Detail?roomId=' + roomId;
+                    });
+                });
+
+            });
+        }
+    });
+</script>

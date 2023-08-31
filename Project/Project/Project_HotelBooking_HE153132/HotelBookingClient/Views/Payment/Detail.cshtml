@@ -1,0 +1,112 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    var paymentId = Context.Request.Query["paymentId"];
+}
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <partial name="_AsideAdmin" />
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-fluid flex-grow-1 container-p-y">
+                    <div class="card">
+                        <div class="card-header">
+                            Payment Detail
+                        </div>
+                        <div class="card-body" style="padding: 24px;">
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">Username: </h6>
+                                <p class="card-text ps-5 ms-5" id="Username"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">PaymentID: </h6>
+                                <p class="card-text ps-5 ms-5" id="PaymentID"></p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">BookingID: </h6>
+                                <p class="card-text ps-5 ms-5" id="BookingID"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">PaymentMethod: </h6>
+                                <p class="card-text ps-5 ms-5" id="PaymentMethod"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">PaymentDate: </h6>
+                                <p class="card-text ps-5 ms-5" id="PaymentDate"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">RoomName: </h6>
+                                <p class="card-text ps-5 ms-5" id="RoomName"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">CheckInDate: </h6>
+                                <p class="card-text ps-5 ms-5" id="CheckInDate"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">CheckOutDate: </h6>
+                                <p class="card-text ps-5 ms-5" id="CheckOutDate"</p>
+                            </div>
+                            <div class="d-flex my-3">
+                                <h6 class="card-title mt-1" style="width: 125px;">TotalPrice: </h6>
+                                <p class="card-text ps-5 ms-5" id="TotalPrice"</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+                <div class="content-backdrop fade"></div>   
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var paymentId = '@paymentId';
+        $.ajax({
+            url: "https://localhost:7152/api/Payment/" + paymentId,
+            type: "get",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result, status, xhr) {
+                $("#PaymentID").text(result.paymentId);
+                $("#BookingID").text(result.bookingId);
+                var paymentDate = new Date(result.paymentDate);
+                var formattedPaymentDate = paymentDate.toLocaleDateString('vi-VN');
+                $("#PaymentDate").text(formattedPaymentDate);
+
+                $("#RoomName").text(result.roomName);
+
+                // Format CheckInDate
+                var checkInDate = new Date(result.checkInDate);
+                var formattedCheckInDate = checkInDate.toLocaleDateString('vi-VN');
+                $("#CheckInDate").text(formattedCheckInDate);
+
+                // Format CheckOutDate
+                var checkOutDate = new Date(result.checkOutDate);
+                var formattedCheckOutDate = checkOutDate.toLocaleDateString('vi-VN');
+                $("#CheckOutDate").text(formattedCheckOutDate);
+                $("#RoomName").text(result.roomName);
+                $("#PaymentMethod").text(result.paymentMethod);
+
+                var formattedPrice = result.totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                $("#TotalPrice").text(formattedPrice);
+                $("#Username").text(result.username);
+
+            },
+            error: function (xhr, status, error) {
+                console.log(xhr);
+            }
+        });
+    });
+</script>

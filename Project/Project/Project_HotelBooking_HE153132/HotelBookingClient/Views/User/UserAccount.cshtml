@@ -1,0 +1,416 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    string email = ViewData["Email"] as string;
+    string username = ViewData["Username"] as string;
+    string phone = ViewData["Phone"] as string;
+    int? userId = ViewData["UserId"] as int?;
+}
+
+
+<section style="background-color: #fff;">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="https://i.pinimg.com/236x/1d/aa/ed/1daaedf28727c2403a01d1fbb7dfac4c.jpg" alt="avatar"
+                             class="rounded-circle img-fluid" style="width: 150px;">
+                        <h5 class="my-3" id="username-1"></h5>
+                        @*  <p class="text-muted mb-1">Full Stack Developer</p>
+                        <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                        <div class="d-flex justify-content-center mb-2">
+                        <button type="button" class="btn btn-primary">Follow</button>
+                        <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                        </div>*@
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-center align-items-center p-3">
+                                <div>Tài khoản liên kết</div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                <p class="mb-0">Github</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                <p class="mb-0">Twitter</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                <p class="mb-0">Instagram</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                <p class="mb-0">Facebook</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card mb-2">
+                    <div class="card-body" style="padding-top: 12px; padding-bottom: 12px;">
+                        <h5 class="mb-0">Thông tin tài khoản</h5>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Full Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="username" class="text-muted mb-0"></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="email" class="text-muted mb-0"></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="phone" class="text-muted mb-0"></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div hidden class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Password</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="password" class="text-muted mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary update-info">Cập nhật</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <div class="card-body" style="padding-top: 12px; padding-bottom: 12px;">
+                        <h5 class="mb-0">Mật khẩu</h5>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Password</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p id="password" class="text-muted mb-0"></p>
+                                <a id="changepw" href="#">Thay đổi mật khẩu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <div class="card-body" style="padding-top: 12px; padding-bottom: 12px;">
+                        <h5 class="mb-0">Danh sách phòng đã đặt</h5>
+                    </div>
+                </div>
+
+                <div class="booking">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="updateInfor" tabindex="-1" role="dialog" aria-labelledby="paymentDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentDetailModalLabel">Cập nhật thông tin</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="bookingIdPayment">FullName:</label>
+                    <input type="text" class="form-control" id="usernameModal">
+                </div>
+                <div class="form-group">
+                    <label for="usernamePayment">Email</label>
+                    <input type="text" class="form-control" id="emailModal" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="roomNamePayment">Phone:</label>
+                    <input type="text" class="form-control" id="phoneModal">
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Password:</label>
+                    <input type="password" class="form-control" id="passwordModal">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary save">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updatePassword" tabindex="-1" role="dialog" aria-labelledby="paymentDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentDetailModalLabel">Cập nhật mật khẩu</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="paymentMethod">Old Password:</label>
+                    <input type="password" class="form-control" id="passwordOld">
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">New Password:</label>
+                    <input type="password" class="form-control" id="passwordUpdate">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary update">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .toast-success {
+        background-color: #28a745;
+    }
+
+    .toast-error {
+        background-color: #dc3545;
+    }
+
+    .toast-info {
+        background-color: #17a2b8;
+    }
+
+    .toast-warning {
+        background-color: #ffc107;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        var userId = '@userId';
+        loadDataInfor();
+        var userInfo;
+        function loadDataInfor() {
+            var infoPromise = $.ajax({
+                url: "https://localhost:7152/api/User?$filter=userId eq " + userId,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                userInfo = result[0];
+                $("#username").text(userInfo.username);
+                $("#username-1").text(userInfo.username);
+                $("#email").text(userInfo.email);
+                $("#phone").text(userInfo.phone);
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+        }
+
+        $(".update-info").on("click", function () {
+            $("#updateInfor").modal("show");
+            $("#usernameModal").val(userInfo.username);
+            $("#emailModal").val(userInfo.email);
+            $("#phoneModal").val(userInfo.phone);
+            $("#passwordModal").val("");
+        })
+
+        $(".save").on("click", function () {
+            var dataSave = {
+                userId: userId,
+                roleId: 2,
+                username: $("#usernameModal").val(),
+                password: $("#passwordModal").val(),
+                email: $("#emailModal").val(),
+                phone: $("#phoneModal").val(),
+            }
+            if (dataSave.password == userInfo.password) {
+                $.ajax({
+                    url: "https://localhost:7152/api/User/" + userId,
+                    type: "PUT",
+                    data: JSON.stringify(dataSave),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                }).done(function (result) {
+                    toastr.success('Cập nhật thành công.', 'Success', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-success',
+                        timeOut: 5000
+                    });
+                    $("#updateInfor").modal("hide");
+                    loadDataInfor();
+                }).fail(function (xhr, status, error) {
+                    toastr.success('Cập nhật thất bại', 'Error', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-error',
+                        timeOut: 5000
+                    });
+                    console.log(xhr);
+                });
+            } else {
+                toastr.success('Mật khẩu không chính xác.', 'Error', {
+                    positionClass: 'toast-top-right',
+                    closeButton: true,
+                    toastClass: 'toast-error',
+                    timeOut: 5000
+                });
+            }
+        });
+
+
+        loadListBooking();
+        function loadListBooking() {
+            var bookingPromise = $.ajax({
+                url: "https://localhost:7152/api/Booking?&filter=userId eq " + userId,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+
+                $(".booking").html("");
+                for (var i = 0; i < result.length; i++) {
+                    var booking = result[i];
+                    var formattedPrice = booking.totalPrice.toLocaleString();
+                    var cardHtml = `
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">Full Name</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                    <p class="text-muted mb-0">${booking.username}</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">Room Name</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                   <p class="text-muted mb-0">${booking.roomName}</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">From</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                        <p class="text-muted mb-0">${booking.checkInDate}</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">To</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                        <p class="text-muted mb-0">${booking.checkOutDate}</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">Total Price</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                        <p class="text-muted mb-0">${formattedPrice} VND</p>
+                                            </div>
+                                        </div>
+                                            <hr>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p class="mb-0">Status</p>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                        <p class="text-muted mb-0">${booking.status}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                `;
+                    $(".booking").append(cardHtml);
+                }
+
+
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+        }
+
+        $("#changepw").on("click", function () {
+            $("#updatePassword").modal("show");
+        })
+
+        $(".update").on("click", function () {
+            var oldPassword = $("#passwordOld").val();
+            var passwordData = {
+                userId: userId,
+                password: $("#passwordUpdate").val()
+            }
+            if (oldPassword == userInfo.password) {
+                $.ajax({
+                    url: "https://localhost:7152/api/User/changepassword/" + userId,
+                    type: "PUT",
+                    data: JSON.stringify(passwordData),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                }).done(function (result) {
+                    toastr.success('Đổi mật khẩu thành công.', 'Success', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-success',
+                        timeOut: 5000
+                    });
+                    $("#updatePassword").modal("hide");
+                    loadDataInfor();
+                }).fail(function (xhr, status, error) {
+                    toastr.success('Đổi mật khẩu thất bại.', 'Error', {
+                        positionClass: 'toast-top-right',
+                        closeButton: true,
+                        toastClass: 'toast-error',
+                        timeOut: 5000
+                    });
+                    console.log(xhr);
+                });
+            }
+            else {
+                toastr.success('Mật khẩu cũ không chính xác.', 'Error', {
+                    positionClass: 'toast-top-right',
+                    closeButton: true,
+                    toastClass: 'toast-error',
+                    timeOut: 5000
+                });
+            }
+        })
+    });
+
+</script>
+

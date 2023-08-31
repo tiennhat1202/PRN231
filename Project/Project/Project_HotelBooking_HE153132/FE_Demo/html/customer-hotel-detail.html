@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/customer-hotel-detail.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white position-relative"
+        >
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <div class="navbar-brand">Booking.com</div>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+  
+        <!-- Background image -->
+  
+        <div id="intro-example" class="p-5 text-center bg-image">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <div class="search-box d-flex align-items-center">
+                <div id="search-location" class="d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input
+                    placeholder="Bạn muốn đến đâu?"
+                    id="input-search-location"
+                    type="text"
+                  />
+                </div>
+                <div id="search-typeroom" class="d-flex align-items-center">
+                  <i class="fa-solid fa-bed-empty"></i>
+                  <select name="" id="input-search-typeroom">
+                    <option value="">Chọn loại phòng</option>
+                    <option value="">Loại phòng</option>
+                    <option value="">Loại phòng</option>
+                    <option value="">Loại phòng</option>
+                    <option value="">Loại phòng</option>
+                    <option value="">Loại phòng</option>
+                  </select>
+                </div>
+                <button class="btn-search">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+
+      <div class="container">
+        <div class="box-image d-flex justify-content-center">
+            <div class="grid-container-1">
+                <div class="grid-item-1">
+                    <img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg?ca=9&ce=1&s=1024x768&isSkia=true" alt="">
+                </div>
+                <div class="grid-container">
+                  <div class="grid-item">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/212256108.jpg?k=b0e61d6be66152da4c31178f936d20fdc36e07dc26f71775b7eec0b9edf8f571&o=&isSkia=true" alt="">
+                  </div>
+                  <div class="grid-item">
+                    <img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19110713300083181426.jpg?ca=9&ce=1&s=1024x768&isSkia=true" alt="">
+                  </div>
+                  <div class="grid-item"><img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615300080010748.jpg?ca=13&ce=1&s=1024x768&isSkia=true" alt=""></div>  
+                  <div class="grid-item"><img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615210080010378.jpg?ca=9&ce=1&s=1024x768&isSkia=true" alt=""></div>
+                  <div class="grid-item"><img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615300080010745.jpg?ca=13&ce=1&s=1024x768&isSkia=true" alt=""></div>
+                  <div class="grid-item"><img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/214999774.jpg?k=2b4a6fd7a552979e2516eb6483633c11a8c4ae95de538738d5b2546edb2a6e06&o=&isSkia=true" alt=""></div>  
+                </div>
+              </div>
+        </div>
+
+        <div class="popup-image" style="display:none">
+            <span id="exits">&times;</span>
+            <img src="https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg?ca=9&ce=1&s=1024x768&isSkia=true" alt="">
+        </div>
+
+        <div class="box-nav d-flex align-items-center justify-content-between">
+            <ul class="horizontal-list">
+                <li>Overview</li>
+                <li>Room</li>
+            </ul>
+            <div>
+                <span class="price">Giá phòng: 800.000VND</span>
+                <button class="btn-booking">Đặt phòng</button>
+            </div>
+        </div>
+
+
+        <div class="box-description">
+            <p class="box-des-name">LuxHomes Saigon - Vinhomes Central Park</p>
+            <p class="des-location">Bình Thạnh, Ho Chi Minh City, Vietnam </p>
+            <p class="des-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda provident dicta ipsa obcaecati, ratione consequuntur a ducimus repudiandae voluptas sed iste adipisci suscipit esse veritatis eaque. Ratione consectetur minus porro.</p>
+        </div>
+
+        <div class="box-description">
+            <p class="box-des-name">Master Room</p>
+            <p class="des-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda provident dicta ipsa obcaecati, ratione consequuntur a ducimus repudiandae voluptas sed iste adipisci suscipit esse veritatis eaque. Ratione consectetur minus porro.</p>
+        </div>
+
+        <div class="box-map mb-5 d-flex justify-content-center align-items-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4855347082876!2d105.52448937663408!3d21.01324998063223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345b465a4e65fb%3A0xaae6040cfabe8fe!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1689096860916!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <footer class="text-center text-lg-start text-muted" style="background-color: #e9ebee;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Company name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
+
+<script>
+    document.querySelectorAll('.box-image img').forEach(image => {
+        image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        };
+    });
+
+    document.querySelectorAll('.popup-image span').forEach(span => {
+        span.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        };
+    });
+</script>

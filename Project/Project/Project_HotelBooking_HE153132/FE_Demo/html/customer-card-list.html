@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/FE_Demo/css/customer-card-list.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white position-relative"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <div class="navbar-brand">Booking.com</div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng Nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Đăng ký</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Background image -->
+
+      <div id="intro-example" class="p-5 text-center bg-image">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <div class="search-box d-flex align-items-center">
+              <div id="search-location" class="d-flex align-items-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <input
+                  placeholder="Bạn muốn đến đâu?"
+                  id="input-search-location"
+                  type="text"
+                />
+              </div>
+              <div id="search-typeroom" class="d-flex align-items-center">
+                <i class="fa-solid fa-bed-empty"></i>
+                <select name="" id="input-search-typeroom">
+                  <option value="">Chọn loại phòng</option>
+                  <option value="">Loại phòng</option>
+                  <option value="">Loại phòng</option>
+                  <option value="">Loại phòng</option>
+                  <option value="">Loại phòng</option>
+                  <option value="">Loại phòng</option>
+                </select>
+              </div>
+              <button class="btn-search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+
+    <div class="container">
+      <div class="customer-card-list-body">
+        <div class="row ms-0 me-0">
+          <!-- BlockFilter Start -->
+          <div class="col-sm-3 filter mt-3">
+            <div class="filter-box">
+                <div class="text-center title-filter">Lọc phòng</div>
+                <div class="mt-2 mb-2 ps-2 pe-2 box-filter-price">
+                    <label for="vol" class="title-filter-price">Giá phòng: 0 - 10.000.000VND</label><br>
+                    <input id="vol" type="range" value="500000" min="1" max="10000000" oninput="this.nextElementSibling.value = this.value">
+                    <output class="result-filter-price">500000</output><span class="vnd">VND</span>
+                </div>
+                <div class="mt-2 mb-2 ps-2 pe-2 box-filter-type">
+                    <label class="title-filter-price mb-2">Loại Phòng</label><br>
+                    <input type="checkbox" id="master" name="master" value="">
+                    <label for="master"> Master</label><br>
+                    <input type="checkbox" id="single" name="single" value="">
+                    <label for="single"> Single</label><br>
+                    <input type="checkbox" id="double" name="double" value="">
+                    <label for="double"> Double</label><br>
+                </div>
+                <div class="mt-2 mb-2 ps-2 pe-2 box-filter-hotel">
+                    <label class="title-filter-price mb-2">Địa điểm</label><br>
+                    <input type="checkbox" id="hn" name="hn" value="">
+                    <label for="hn"> Hà Nội</label><br>
+                    <input type="checkbox" id="tphcm" name="tphcm" value="">
+                    <label for="tphcm"> TP.Hồ Chí Minh</label><br>
+                    <input type="checkbox" id="vungtau" name=vungtaue" value="">
+                    <label for="vungtau"> Vũng Tàu</label><br>
+                    <input type="checkbox" id="dn" name="dn" value="">
+                    <label for="dn"> Đà Nẵng</label><br>
+                    <input type="checkbox" id="nt" name="nt" value="">
+                    <label for="nt"> Nha Trang</label><br>
+                </div>
+            </div>
+
+
+          </div>
+          <!-- Block Filter End -->
+          <!-- BlockItem -->
+          <div class="col-sm-9">
+
+            <!-- Item -->
+            <div class="row mt-3 mb-3">
+              <div class="col-sm-12">
+                <div class="card w-100 card-item">
+                  <div class="row ms-2">
+                    <div
+                      class="col-sm-3 card-img-item d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o="
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm-9 card-body">
+                      <h5 class="card-title">Hà Nội Hotel Name</h5>
+                      <div class="card-text">
+                        <div class="item-location">
+                          <i class="fa-solid fa-location-dot dot-hotel"></i>Địa
+                          chỉ: Hòa Lạc, Hà Nội
+                        </div>
+                        <div class="item-roomtype mt-2 mb-2">
+                          Loại phòng: Master
+                        </div>
+                        <div class="item-roomdescription mb-2">
+                          Mô tả: Lorem ipsum dolor sit amet consectetur
+                          adipisicing elit. Totam voluptas quod sint tempore.
+                          Sint minus omnis saepe non cumque veniam voluptas vel
+                          iure a, eaque officiis maxime dolore, dolor eius!
+                        </div>
+                      </div>
+                      <div class="mt-3 d-flex align-items-center justify-content-between">
+                        <span class="price">Giá phòng: 800.000VND</span>
+                        <button class="btn-booking">Đặt phòng</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item End-->
+
+            <!-- Item -->
+            <div class="row mt-3 mb-3">
+                <div class="col-sm-12">
+                  <div class="card w-100 card-item">
+                    <div class="row ms-2">
+                      <div
+                        class="col-sm-3 card-img-item d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://cf.bstatic.com/xdata/images/hotel/square600/247138462.webp?k=db235879f24c07e0b1f66e550802d3f0f59da767b50e21e888a7b08af3121fb5&o="
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-sm-9 card-body">
+                        <h5 class="card-title">Hà Nội Hotel Name</h5>
+                        <div class="card-text">
+                          <div class="item-location">
+                            <i class="fa-solid fa-location-dot dot-hotel"></i>Địa
+                            chỉ: Hòa Lạc, Hà Nội
+                          </div>
+                          <div class="item-roomtype mt-2 mb-2">
+                            Loại phòng: Master
+                          </div>
+                          <div class="item-roomdescription mb-2">
+                            Mô tả: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Totam voluptas quod sint tempore.
+                            Sint minus omnis saepe non cumque veniam voluptas vel
+                            iure a, eaque officiis maxime dolore, dolor eius!
+                          </div>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                          <span class="price">Giá phòng: 800.000VND</span>
+                          <button class="btn-booking">Đặt phòng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Item End-->
+
+              <!-- Item -->
+            <div class="row mt-3 mb-3">
+                <div class="col-sm-12">
+                  <div class="card w-100 card-item">
+                    <div class="row ms-2">
+                      <div
+                        class="col-sm-3 card-img-item d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://cf.bstatic.com/xdata/images/hotel/square600/391309458.webp?k=421878b8146e54b573d9b4c6817cb7f0b9c60072792e9b6adae966b582cac065&o="
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-sm-9 card-body">
+                        <h5 class="card-title">Hà Nội Hotel Name</h5>
+                        <div class="card-text">
+                          <div class="item-location">
+                            <i class="fa-solid fa-location-dot dot-hotel"></i>Địa
+                            chỉ: Hòa Lạc, Hà Nội
+                          </div>
+                          <div class="item-roomtype mt-2 mb-2">
+                            Loại phòng: Master
+                          </div>
+                          <div class="item-roomdescription mb-2">
+                            Mô tả: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Totam voluptas quod sint tempore.
+                            Sint minus omnis saepe non cumque veniam voluptas vel
+                            iure a, eaque officiis maxime dolore, dolor eius!
+                          </div>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                          <span class="price">Giá phòng: 800.000VND</span>
+                          <button class="btn-booking">Đặt phòng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Item End-->
+
+              <!-- Item -->
+            <div class="row mt-3 mb-3">
+                <div class="col-sm-12">
+                  <div class="card w-100 card-item">
+                    <div class="row ms-2">
+                      <div
+                        class="col-sm-3 card-img-item d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://cf.bstatic.com/xdata/images/hotel/square600/449208812.webp?k=8e7a48773e71d55e9b8b095b9a6bd51480324bb464bc79db6897cb6328c47608&o="
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-sm-9 card-body">
+                        <h5 class="card-title">Hà Nội Hotel Name</h5>
+                        <div class="card-text">
+                          <div class="item-location">
+                            <i class="fa-solid fa-location-dot dot-hotel"></i>Địa
+                            chỉ: Hòa Lạc, Hà Nội
+                          </div>
+                          <div class="item-roomtype mt-2 mb-2">
+                            Loại phòng: Master
+                          </div>
+                          <div class="item-roomdescription mb-2">
+                            Mô tả: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Totam voluptas quod sint tempore.
+                            Sint minus omnis saepe non cumque veniam voluptas vel
+                            iure a, eaque officiis maxime dolore, dolor eius!
+                          </div>
+                        </div>
+                        <div class="mt-3 d-flex align-items-center justify-content-between">
+                          <span class="price">Giá phòng: 800.000VND</span>
+                          <button class="btn-booking">Đặt phòng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row mt-3 mb-3 d-flex justify-content-center">
+                <div class="pagination">
+                  <a href="#" class="previous">&laquo; Previous</a>
+                  <a href="#" class="page-number">1</a>
+                  <a href="#" class="page-number">2</a>
+                  <a href="#" class="page-number">3</a>
+                  <a href="#" class="next">Next &raquo;</a>
+                </div>
+              </div>
+              <!-- Item End-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="text-center text-lg-start text-muted" style="background-color: #e9ebee;">
+    
+        <!-- Section: Links  -->
+        <section class="mt-3 pt-3">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Company name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        
+      </footer>
+  </body>
+</html>

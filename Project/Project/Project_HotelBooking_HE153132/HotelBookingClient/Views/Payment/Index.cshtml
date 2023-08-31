@@ -1,0 +1,180 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <partial name="_AsideAdmin" />
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-fluid flex-grow-1 container-p-y">
+                    <!-- Basic Bootstrap Table -->
+                    <div class="card">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-header">Payment</h5>
+                            <div>
+                                <input type="text" id="searchInput" placeholder="Search..." aria-label="Search" />
+                                <button class="btn add-btn btn-primary">Thêm</button>
+                            </div>
+                        </div>
+                        <div class="table-responsive text-nowrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>PaymentId</th>
+                                        <th>BookingId</th>
+                                        <th>PaymentMethod</th>
+                                        <th>PaymentDate</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="payment" class="table-border-bottom-0">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <div class="pagination">
+                                <a href="#" class="previous">Previous</a>
+                                <a href="#" class="page-number">1</a>
+                                <a href="#" class="page-number">2</a>
+                                <a href="#" class="page-number">3</a>
+                                <a href="#" class="next">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Basic Bootstrap Table -->
+                </div>
+                <!-- / Content -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+
+<style>
+    #searchInput {
+        margin-right: 5px;
+        border-radius: 5px;
+        padding-left: 15px;
+        width: 315px;
+        height: 36px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            padding: 5px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            .pagination a:hover {
+                background-color: #eee;
+            }
+
+        .pagination .previous,
+        .pagination .next {
+            font-weight: bold;
+        }
+
+        .pagination .disabled {
+            color: #ccc;
+            pointer-events: none;
+        }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        var pagination = document.querySelector('.pagination');
+        var value = 0;
+        var skip = 12;
+        var top = 12;
+
+        pagination.addEventListener('click', function (event) {
+            var target = event.target;
+            if (target.tagName === 'A') {
+                if (target.classList.contains('page-number')) {
+                    var pageNumber = target.textContent - 1;
+                    if (pageNumber == 0) {
+                        value = 0;
+                        showAllPayments(top, value);
+                    } else {
+                        value = skip * pageNumber;
+                        showAllPayments(top, value);
+                    }
+                } else if (target.classList.contains('previous')) {
+                    if (value == 0) {
+                        value = 0;
+                        showAllPayments(top, value);
+                    } else {
+                        value -= skip;
+                        showAllPayments(top, value);
+                    }
+
+                } else if (target.classList.contains('next')) {
+                    value += skip;
+                    showAllPayments(top, value);
+                }
+            }
+        });
+        showAllPayments(top, value);
+        function showAllPayments(top, value) {
+            var paymentResult;
+
+            var paymentPromise = $.ajax({
+                url: "https://localhost:7152/api/Payment?$orderby=paymentId desc&$top=" + top + "&$skip=" + value,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                paymentResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+
+            $.when(paymentPromise).done(function () {
+                $("#payment").html("");
+
+                $.each(paymentResult, function (index, value) {
+                    var appendElement = $("<tr>");
+                    appendElement.append($("<td>").html(value["paymentId"]));
+                    appendElement.append($("<td>").html(value["bookingId"]));
+                    appendElement.append($("<td>").html(value["paymentMethod"]));
+                    var paymentDate = new Date(value["paymentDate"]);
+                    var paymentDateFormatted = moment(value["paymentDate"]).format("YYYY-MM-DD");
+                    appendElement.append($("<td>").html(paymentDateFormatted));
+                    appendElement.append($("<td class=\"text-center\">").html("<button class='btn btn-outline-info info-btn' data-payment-id='" + value["paymentId"] + "'>Chi tiết</button>"));
+                    $("#payment").append(appendElement);
+                });
+            });
+        }
+
+        //Show
+        $("table").on("click", ".info-btn", function () {
+            var paymentId = $(this).data("payment-id");
+            window.location.href = '/Payment/Detail?paymentId=' + paymentId;
+
+           
+        });
+    });
+</script>

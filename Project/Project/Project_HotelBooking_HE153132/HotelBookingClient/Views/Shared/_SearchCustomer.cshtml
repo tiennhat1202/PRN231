@@ -1,0 +1,86 @@
+﻿
+<div id="search-location" class="d-flex align-items-center">
+    <i class="fa-solid fa-location-dot"></i>
+    <input placeholder="Bạn muốn đến đâu?"
+           id="input-search-location"
+           type="text" />
+</div>
+<div id="search-typeroom" class="d-flex align-items-center">
+    <i class="fa-solid fa-bed-empty"></i>
+    <select name="" id="input-search-typeroom">
+    </select>
+</div>
+<button class="btn-search">Search</button>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var resultSearch;
+        loadDataPage();
+
+        function loadDataPage() {
+            var roomResult, roomTypeResult;
+            var roomPromise = $.ajax({
+                url: "https://localhost:7152/api/Room",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                roomResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+            var roomTypePromise = $.ajax({
+                url: "https://localhost:7152/api/RoomType",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                roomTypeResult = result;
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+
+            $.when(roomTypePromise, roomPromise).done(function () {
+                $("#input-search-typeroom").html("");
+                for (var i = 0; i < roomTypeResult.length; i++) {
+                    var option = $("<option>").val(roomTypeResult[i].roomTypeName).text(roomTypeResult[i].roomTypeName);
+                    $("#input-search-typeroom").append(option);
+                }
+                // Thêm tùy chọn mặc định
+                var defaultOption = $("<option>").text("Chọn loại phòng").prop("selected", true).prop("disabled", true);
+                $("#input-search-typeroom").prepend(defaultOption);
+            });
+        }
+
+        var query = "";
+        var selectedValue;
+        $(".btn-search").on("click", function () {
+            query = $("#input-search-location").val();
+            selectedValue = $("#input-search-typeroom").val();
+            console.log(selectedValue);
+            if (selectedValue == null){
+                urlq = "https://localhost:7152/api/Room/GetRoomForHomeCustomer?$filter=contains(tolower(state),'" + query + "') and contains(roomTypeName,'')";
+            }else{
+                urlq = "https://localhost:7152/api/Room/GetRoomForHomeCustomer?$filter=contains(tolower(state),'" + query + "') and contains(roomTypeName,'" + selectedValue + "')";
+            }
+            //url = "https://localhost:7152/api/Room/GetRoomForHomeCustomer?$filter=contains(tolower(state),'" + query + "') and contains(roomTypeName,'" + selectedValue + "')";
+            //console.log(urlq);
+            $.ajax({
+                url: urlq,
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json"
+            }).done(function (result) {
+                resultSearch = result;
+                localStorage.setItem('searchData', JSON.stringify(resultSearch));
+                   window.location.href = '/Customer/Customer_Search';
+            }).fail(function (xhr, status, error) {
+                console.log(xhr);
+            });
+        })
+       
+
+
+    });
+</script>

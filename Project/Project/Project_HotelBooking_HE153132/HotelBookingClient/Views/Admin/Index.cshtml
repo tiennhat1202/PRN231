@@ -1,0 +1,119 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.min.css">
+
+<!-- Các tệp JavaScript của FusionCharts -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <partial name="_AsideAdmin" />
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+
+                <div class="container-fluid flex-grow-1 container-p-y d-flex justify-content-center align-items-center">
+                    <div id="chartContainer"></div>
+
+                </div>
+                <div class="container-fluid flex-grow-1 container-p-y d-flex justify-content-center">
+                    <div class="select-month py-0">
+                        <label for="month">Thống kê số liệu</label>
+                        <select name="month" id="month">
+                            <option value="1">Tháng 1</option>
+                            <option value="2">Tháng 2</option>
+                            <option value="3">Tháng 3</option>
+                            <option value="4">Tháng 4</option>
+                            <option value="5">Tháng 5</option>
+                            <option value="6">Tháng 6</option>
+                            <option value="7">Tháng 7</option>
+                            <option value="8">Tháng 8</option>
+                            <option value="9">Tháng 9</option>
+                            <option value="10">Tháng 10</option>
+                            <option value="11">Tháng 11</option>
+                            <option value="12">Tháng 12</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- / Content -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+
+<script>
+
+    var selectMonthElement = document.getElementById('month');
+    selectMonthElement.addEventListener('change', function () {
+        var selectedMonth = this.value;
+        fetchAndRenderChart(selectedMonth);
+    });
+
+    var initialMonth = selectMonthElement.value;
+    fetchAndRenderChart(initialMonth);
+
+    function fetchAndRenderChart(selectedMonth) {
+        fetch(`https://localhost:7152/api/Statistical?month=${selectedMonth}`)
+            .then(response => response.json())
+            .then(data => {
+                const chartData = data;
+
+                const chart = new FusionCharts({
+                    type: 'mscolumn2d',
+                    renderAt: 'chartContainer',
+                    width: '800',
+                    height: '600',
+                    dataFormat: 'json',
+                    dataSource: {
+                        chart: {
+                            caption: 'Biểu đồ thống kê tháng ' + selectedMonth,
+                            xAxisName: 'Tháng ' + selectedMonth,
+                            theme: 'fusion'
+                        },
+                        categories: [
+                            {
+                                category: chartData.map(item => ({ label: item.label }))
+
+                            }
+                        ],
+                        dataset: [
+                            {
+                                seriesname: 'Doanh thu',
+                                data: chartData.map(item => ({ value: item.value }))
+
+                            },
+                            {
+                                seriesname: 'Số lượt đặt phòng',
+                                renderAs: 'line',
+                                parentYAxis: 'S',
+                                data: chartData.map(item => ({ value: item.profit }))
+                            }
+                        ]
+                    }
+                });
+
+                chart.render();
+            })
+            .catch(error => {
+                console.error('Lỗi khi lấy dữ liệu:', error);
+            });
+    }
+
+
+
+</script>
+

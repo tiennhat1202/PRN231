@@ -1,0 +1,243 @@
+﻿#intro-example {
+    height: 560px;
+    background-image: url("https://cdn6.agoda.net/images/accommodation/backdrop/apartments.jpg");
+    background-position-y: top;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro-example {
+        height: 560px;
+        background-image: url("https://cdn6.agoda.net/images/accommodation/backdrop/apartments.jpg");
+    }
+}
+
+.container {
+    max-width: 1280px !important;
+}
+
+.header {
+    height: 600px;
+}
+
+.search-box {
+    width: 1124px;
+    height: 80px;
+    background-color: #f8f7f9;
+    border-radius: 16px;
+    box-shadow: #6b6b6b 0px 2px 8px 3px;
+    line-height: 22.8571px;
+    text-align: center;
+}
+
+#search-location {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-right: 25px;
+    width: 600px;
+    height: 52px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.fa-location-dot {
+    color: rgb(77, 77, 77);
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#input-search-location {
+    border: none;
+    width: 550px;
+}
+
+    #input-search-location:focus {
+        border: none;
+        outline: none;
+    }
+
+#search-typeroom {
+    width: 350px;
+    height: 52px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#input-search-typeroom {
+    width: 295px;
+    border: none;
+}
+
+    #input-search-typeroom:focus {
+        border: none;
+        outline: none;
+    }
+
+    #input-search-typeroom option {
+        background-color: ffffff;
+        font-size: 16px;
+    }
+
+.fa-bed-empty {
+    color: rgb(230, 0, 0);
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-search {
+    margin-left: 10px;
+    width: 115px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0867ff;
+    color: white;
+}
+
+#vol {
+    width: 300px;
+}
+
+.customer-card-list-body {
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.filter {
+    padding: 0 !important;
+}
+
+.filter-box {
+    border: 1px solid #bebebe;
+    border-radius: 8px;
+}
+
+.title-filter-price, .title-filter-state, .title-filter-type {
+    color: #1a1a1a;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+.title-filter {
+    color: #1a1a1a;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 1px solid #bebebe;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.result-filter-price, .vnd {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card-item {
+    background-color: #f0f6ff !important;
+    border-radius: 8px !important;
+    box-shadow: #a3d7fc 0px 0px 8px 0px !important;
+}
+
+.card-img-item {
+    padding: 10px 0px 10px 0px;
+}
+
+    .card-img-item img {
+        width: 200px;
+        height: 200px;
+        /* padding: 10px 0px 10px 0px; */
+        border-radius: 8px !important;
+    }
+
+.card-body {
+    padding-top: 16px !important;
+}
+
+.card-title {
+    color: #006ce4;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 8px 0px 0px;
+}
+
+    .card-title:hover {
+        color: #1a1a1a;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        padding: 8px 0px 0px;
+    }
+
+.dot-hotel {
+    font-size: 12px;
+    color: #75a8f9;
+    padding: 2px 5px 2px 2px;
+}
+
+.item-location {
+    color: #006ce4;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.item-roomtype,
+.item-roomdescription {
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.price {
+    color: #e12d2d;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.btn-booking {
+    width: 98px;
+    height: 36px;
+    border: none !important;
+    background-color: #0867ff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+    .pagination a {
+        padding: 8px 12px;
+        margin: 0 5px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+        .pagination a:hover {
+            background-color: #eee;
+        }
+
+    .pagination .previous,
+    .pagination .next {
+        font-weight: bold;
+    }
+
+    .pagination .disabled {
+        color: #ccc;
+        pointer-events: none;
+    }
+
+

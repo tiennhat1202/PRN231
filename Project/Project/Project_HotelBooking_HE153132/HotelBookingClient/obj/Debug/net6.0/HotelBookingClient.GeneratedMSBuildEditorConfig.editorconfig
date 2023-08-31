@@ -1,0 +1,129 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HotelBookingClient
+build_property.RootNamespace = HotelBookingClient
+build_property.ProjectDir = C:\FU_Learning\SU_23\Git\PRN231\Project\Project_HotelBooking_HE153132\HotelBookingClient\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\FU_Learning\SU_23\Git\PRN231\Project\Project_HotelBooking_HE153132\HotelBookingClient
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Admin/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Auth/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Booking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Customer/Customer_Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJfSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Customer/Customer_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Customer/Customer_Room_Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJfUm9vbV9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Customer/Customer_Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJfU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Hotel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Payment/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Payment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/RoomImage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUltYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/RoomType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_AsideAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Bc2lkZUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_SearchCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2hDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/User/UserAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/User/UserBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/FU_Learning/SU_23/Git/PRN231/Project/Project_HotelBooking_HE153132/HotelBookingClient/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q6ggnd06pj

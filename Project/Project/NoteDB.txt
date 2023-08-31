@@ -1,0 +1,53 @@
+-Hệ thống khách sạn 
+
+Hotel: 	hotel_id(primarykey)
+	hotel_name 
+	address
+	state
+	country
+	contact
+	email
+	desciption
+	
+Rooms: 	room_id (PK)
+	room_name
+	room_type_id (FK)
+	price_per_night
+	status
+	description
+
+RoomTypes: room_type_id (PK)
+	room_type_name
+	description
+
+Bookings: booking_id(PK)
+	room_id
+	guest_id
+	check_in_date
+	check_out_date
+	total_price
+
+User: 	user_id(PK)
+	role_id	(FK)
+	username
+	password
+	email
+	phone
+
+Role: 	role_id(PK)
+	role_name
+
+Payment:payment_id(PK)
+	booking_id(FK)
+	payment_method 
+	payment_date 
+
+
+GET /Bookings?$filter=room_id eq 5 and check_in_date le 2023-07-11 and check_out_date ge 2023-07-15&$select=status
+
+https://localhost:7152/api/Booking?$filter=roomId%20eq%201%20and%20checkOutDate%20ge%202023-07-24T00:00:00Z%20and%20checkOutDate%20le%202023-07-29T00:00:00Z
+"https://localhost:7152/api/Booking?$filter=(roomId eq " + roomId + ") and (checkOutDate ge " + checkInDateValue + "Z and checkOutDate le " + checkOutDateValue + "Z) or (roomId eq " + roomId + ") and (checkOutDate ge " + checkInDateValue + "Z and checkOutDate le " + checkOutDateValue + "Z)"
+
+"https://localhost:7152/api/Booking?$filter=roomId eq " + roomId + " and (checkOutDate ge " + checkInDateValue + "Z and checkOutDate le " + checkOutDateValue + "Z) or (roomId eq " + roomId + " and checkOutDate ge " + checkInDateValue + "Z and checkOutDate ge " + checkOutDateValue + "Z)"
+
+ or (roomId eq " + roomId + " and checkOutDate ge " + checkInDateValue + "Z and checkOutDate ge " + checkOutDateValue + "Z) or (roomId eq " + roomId + " and checkOutDate le " + checkInDateValue + "Z and checkOutDate ge " + checkOutDateValue + "Z)
